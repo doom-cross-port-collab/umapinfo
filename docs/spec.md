@@ -80,9 +80,17 @@ Ends the game after this level, showing the default post-game screen for the cur
 `endpic = "graphic"`
 Ends the game after this level, showing the specified graphic as an end screen. Skips the 'entering level' screen.
 
-### EndBunny
+### EndBunny (Doom only)
 `endbunny = true`
-Ends the game after this level, showing the bunny scroller. In Heretic it shows the demon scroller instead. Skips the 'entering level' screen.
+Ends the game after this level, showing the horizontal bunny scroller. Skips the 'entering level' screen.
+
+### EndDemon (Heretic only)
+`enddemon = true`
+Ends the game after this level, showing the vertical demon scroller. Skips the 'entering level' screen.
+
+### EndPalette
+`endpalette = "palette"`
+Defines the palette to use for the end graphics: 'endpic', 'endbunny' and 'enddemon'.
 
 ### EndCast
 `endcast = true`
