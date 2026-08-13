@@ -1,0 +1,373 @@
+map MAP01
+{
+	LevelName = ""
+	Label = "Level 1"
+	LevelPic = "CWILV00"
+	Author = ""
+	Next = "MAP02"
+	Music = "D_RUNNIN"
+	SkyTexture = "SKY1"
+	Episode = clear
+	Episode = "-", "Name", "1"
+}
+
+map MAP02
+{
+	LevelName = ""
+	Label = "Level 2"
+	LevelPic = "CWILV01"
+	Author = ""
+	Next = "MAP03"
+	Music = "D_STALKS"
+	SkyTexture = "SKY1"
+}
+
+map MAP03
+{
+	LevelName = ""
+	Label = "Level 3"
+	LevelPic = "CWILV02"
+	Author = ""
+	Next = "MAP04"
+	Music = "D_COUNTD"
+	SkyTexture = "SKY1"
+}
+
+map MAP04
+{
+	LevelName = ""
+	Label = "Level 4"
+	LevelPic = "CWILV03"
+	Author = ""
+	Next = "MAP05"
+	Music = "D_BETWEE"
+	SkyTexture = "SKY1"
+}
+
+map MAP05
+{
+	LevelName = ""
+	Label = "Level 5"
+	LevelPic = "CWILV04"
+	Author = ""
+	Next = "MAP06"
+	Music = "D_DOOM"
+	SkyTexture = "SKY1"
+}
+
+map MAP06
+{
+	LevelName = ""
+	Label = "Level 6"
+	LevelPic = "CWILV05"
+	Author = ""
+	Next = "MAP07"
+	Music = "D_THE_DA"
+	SkyTexture = "SKY1"
+	InterBackdrop = "SLIME16"
+	InterMusic = "D_READ_M"
+	InterText = ""
+}
+
+map MAP07
+{
+	LevelName = ""
+	Label = "Level 7"
+	LevelPic = "CWILV06"
+	Author = ""
+	Next = "MAP08"
+	Music = "D_SHAWN"
+	SkyTexture = "SKY1"
+}
+
+map MAP08
+{
+	LevelName = ""
+	Label = "Level 8"
+	LevelPic = "CWILV07"
+	Author = ""
+	Next = "MAP09"
+	Music = "D_DDTBLU"
+	SkyTexture = "SKY1"
+}
+
+map MAP09
+{
+	LevelName = ""
+	Label = "Level 9"
+	LevelPic = "CWILV08"
+	Author = ""
+	Next = "MAP10"
+	Music = "D_IN_CIT"
+	SkyTexture = "SKY1"
+}
+
+map MAP10
+{
+	LevelName = ""
+	Label = "Level 10"
+	LevelPic = "CWILV09"
+	Author = ""
+	Next = "MAP11"
+	Music = "D_DEAD"
+	SkyTexture = "SKY1"
+}
+
+map MAP11
+{
+	LevelName = ""
+	Label = "Level 11"
+	LevelPic = "CWILV10"
+	Author = ""
+	Next = "MAP12"
+	Music = "D_STLKS2"
+	SkyTexture = "SKY1"
+	InterBackdrop = "RROCK14"
+	InterMusic = "D_READ_M"
+	InterText = ""
+}
+
+map MAP12
+{
+	LevelName = ""
+	Label = "Level 12"
+	LevelPic = "CWILV11"
+	Author = ""
+	Next = "MAP13"
+	Music = "D_THEDA2"
+	SkyTexture = "SKY2"
+}
+
+map MAP13
+{
+	LevelName = ""
+	Label = "Level 13"
+	LevelPic = "CWILV12"
+	Author = ""
+	Next = "MAP14"
+	Music = "D_DOOM2"
+	SkyTexture = "SKY2"
+}
+
+map MAP14
+{
+	LevelName = ""
+	Label = "Level 14"
+	LevelPic = "CWILV13"
+	Author = ""
+	Next = "MAP15"
+	Music = "D_DDTBL2"
+	SkyTexture = "SKY2"
+}
+
+map MAP15
+{
+	LevelName = ""
+	Label = "Level 15"
+	LevelPic = "CWILV14"
+	Author = ""
+	Next = "MAP16"
+	NextSecret = "MAP31"
+	Music = "D_RUNNI2"
+	SkyTexture = "SKY2"
+	InterBackdrop = "RROCK13"
+	InterMusic = "D_READ_M"
+	InterTextSecret = ""
+}
+
+map MAP16
+{
+	LevelName = ""
+	Label = "Level 16"
+	LevelPic = "CWILV15"
+	Author = ""
+	Next = "MAP17"
+	Music = "D_DEAD2"
+	SkyTexture = "SKY2"
+}
+
+map MAP17
+{
+	LevelName = ""
+	Label = "Level 17"
+	LevelPic = "CWILV16"
+	Author = ""
+	Next = "MAP18"
+	Music = "D_STLKS3"
+	SkyTexture = "SKY2"
+}
+
+map MAP18
+{
+	LevelName = ""
+	Label = "Level 18"
+	LevelPic = "CWILV17"
+	Author = ""
+	Next = "MAP19"
+	Music = "D_ROMERO"
+	SkyTexture = "SKY2"
+}
+
+map MAP19
+{
+	LevelName = ""
+	Label = "Level 19"
+	LevelPic = "CWILV18"
+	Author = ""
+	Next = "MAP20"
+	Music = "D_SHAWN2"
+	SkyTexture = "SKY2"
+}
+
+map MAP20
+{
+	LevelName = ""
+	Label = "Level 20"
+	LevelPic = "CWILV19"
+	Author = ""
+	Next = "MAP21"
+	Music = "D_MESSAG"
+	SkyTexture = "SKY2"
+	InterBackdrop = "RROCK07"
+	InterMusic = "D_READ_M"
+	InterText = ""
+}
+
+map MAP21
+{
+	LevelName = ""
+	Label = "Level 21"
+	LevelPic = "CWILV20"
+	Author = ""
+	Next = "MAP22"
+	Music = "D_COUNT2"
+	SkyTexture = "SKY3"
+}
+
+map MAP22
+{
+	LevelName = ""
+	Label = "Level 22"
+	LevelPic = "CWILV21"
+	Author = ""
+	Next = "MAP23"
+	Music = "D_DDTBL3"
+	SkyTexture = "SKY3"
+}
+
+map MAP23
+{
+	LevelName = ""
+	Label = "Level 23"
+	LevelPic = "CWILV22"
+	Author = ""
+	Next = "MAP24"
+	Music = "D_AMPIE"
+	SkyTexture = "SKY3"
+}
+
+map MAP24
+{
+	LevelName = ""
+	Label = "Level 24"
+	LevelPic = "CWILV23"
+	Author = ""
+	Next = "MAP25"
+	Music = "D_THEDA3"
+	SkyTexture = "SKY3"
+}
+
+map MAP25
+{
+	LevelName = ""
+	Label = "Level 25"
+	LevelPic = "CWILV24"
+	Author = ""
+	Next = "MAP26"
+	Music = "D_ADRIAN"
+	SkyTexture = "SKY3"
+}
+
+map MAP26
+{
+	LevelName = ""
+	Label = "Level 26"
+	LevelPic = "CWILV25"
+	Author = ""
+	Next = "MAP27"
+	Music = "D_MESSG2"
+	SkyTexture = "SKY3"
+}
+
+map MAP27
+{
+	LevelName = ""
+	Label = "Level 27"
+	LevelPic = "CWILV26"
+	Author = ""
+	Next = "MAP28"
+	Music = "D_ROMER2"
+	SkyTexture = "SKY3"
+}
+
+map MAP28
+{
+	LevelName = ""
+	Label = "Level 28"
+	LevelPic = "CWILV27"
+	Author = ""
+	Next = "MAP29"
+	Music = "D_TENSE"
+	SkyTexture = "SKY3"
+}
+
+map MAP29
+{
+	LevelName = ""
+	Label = "Level 29"
+	LevelPic = "CWILV28"
+	Author = ""
+	Next = "MAP30"
+	Music = "D_SHAWN3"
+	SkyTexture = "SKY3"
+}
+
+map MAP30
+{
+	LevelName = ""
+	Label = "Level 30"
+	LevelPic = "CWILV29"
+	Author = ""
+	Endcast = true
+	Music = "D_OPENIN"
+	SkyTexture = "SKY3"
+	InterBackdrop = "RROCK17"
+	InterMusic = "D_READ_M"
+	InterText = ""
+}
+
+map MAP31
+{
+	LevelName = ""
+	Label = "Secret Level"
+	LevelPic = "CWILV30"
+	Author = ""
+	Next = "MAP16"
+	NextSecret = "MAP32"
+	Music = "D_EVIL"
+	SkyTexture = "SKY3"
+	InterBackdrop = "RROCK19"
+	InterMusic = "D_READ_M"
+	InterTextSecret = ""
+}
+
+map MAP32
+{
+	LevelName = ""
+	Label = "Secret Level 2"
+	LevelPic = "CWILV31"
+	Author = ""
+	Next = "MAP16"
+	Music = "D_ULTIMA"
+	SkyTexture = "SKY3"
+}

@@ -1,0 +1,428 @@
+map MAP01
+{
+	LevelName = "Entryway"
+	Label = "Level 1"
+	LevelPic = "CWILV00"
+	Author = "Sandy Petersen"
+	Next = "MAP02"
+	Music = "D_RUNNIN"
+	SkyTexture = "SKY1"
+	Episode = clear
+	Episode = "-", "Hell on Earth", "h"
+}
+
+map MAP02
+{
+	LevelName = "Underhalls"
+	Label = "Level 2"
+	LevelPic = "CWILV01"
+	Author = "American McGee"
+	Next = "MAP03"
+	Music = "D_STALKS"
+	SkyTexture = "SKY1"
+}
+
+map MAP03
+{
+	LevelName = "The Gantlet"
+	Label = "Level 3"
+	LevelPic = "CWILV02"
+	Author = "American McGee"
+	Next = "MAP04"
+	Music = "D_COUNTD"
+	SkyTexture = "SKY1"
+}
+
+map MAP04
+{
+	LevelName = "The Focus"
+	Label = "Level 4"
+	LevelPic = "CWILV03"
+	Author = "American McGee"
+	Next = "MAP05"
+	Music = "D_BETWEE"
+	SkyTexture = "SKY1"
+}
+
+map MAP05
+{
+	LevelName = "The Waste Tunnels"
+	Label = "Level 5"
+	LevelPic = "CWILV04"
+	Author = "American McGee"
+	Next = "MAP06"
+	Music = "D_DOOM"
+	SkyTexture = "SKY1"
+}
+
+map MAP06
+{
+	LevelName = "The Crusher"
+	Label = "Level 6"
+	LevelPic = "CWILV05"
+	Author = "American McGee"
+	Next = "MAP07"
+	Music = "D_THE_DA"
+	SkyTexture = "SKY1"
+	InterBackdrop = "SLIME16"
+	InterMusic = "D_READ_M"
+	InterText = "You have entered deeply into the infested",
+	            "starport. But something is wrong. The",
+	            "monsters have brought their own reality",
+	            "with them, and the starport's technology",
+	            "is being subverted by their presence.",
+	            "",
+	            "Ahead, you see an outpost of Hell, a",
+	            "fortified zone. If you can get past it,",
+	            "you can penetrate into the haunted heart",
+	            "of the starbase and find the controlling",
+	            "switch that holds the Earth's population",
+	            "hostage."
+}
+
+map MAP07
+{
+	LevelName = "Dead Simple"
+	Label = "Level 7"
+	LevelPic = "CWILV06"
+	Author = "American McGee and Sandy Petersen"
+	Next = "MAP08"
+	Music = "D_SHAWN"
+	SkyTexture = "SKY1"
+}
+
+map MAP08
+{
+	LevelName = "Tricks and Traps"
+	Label = "Level 8"
+	LevelPic = "CWILV07"
+	Author = "Sandy Petersen"
+	Next = "MAP09"
+	Music = "D_DDTBLU"
+	SkyTexture = "SKY1"
+}
+
+map MAP09
+{
+	LevelName = "The Pit"
+	Label = "Level 9"
+	LevelPic = "CWILV08"
+	Author = "Sandy Petersen"
+	Next = "MAP10"
+	Music = "D_IN_CIT"
+	SkyTexture = "SKY1"
+}
+
+map MAP10
+{
+	LevelName = "Refueling Base"
+	Label = "Level 10"
+	LevelPic = "CWILV09"
+	Author = "Tom Hall"
+	Next = "MAP11"
+	Music = "D_DEAD"
+	SkyTexture = "SKY1"
+}
+
+map MAP11
+{
+	LevelName = "Circle of Death"
+	Label = "Level 11"
+	LevelPic = "CWILV10"
+	Author = "John Romero"
+	Next = "MAP12"
+	Music = "D_STLKS2"
+	SkyTexture = "SKY1"
+	InterBackdrop = "RROCK14"
+	InterMusic = "D_READ_M"
+	InterText = "You have won! Your victory has enabled",
+	            "humankind to evacuate Earth and escape",
+	            "the nightmare. Now you are the only",
+	            "human left on the face of the planet.",
+	            "Cannibal mutations, carnivorous aliens,",
+	            "and evil spirits are your only neighbors.",
+	            "You sit back and wait for death, content",
+	            "that you have saved your species.",
+	            "",
+	            "But then, Earth control beams down a",
+	            "message from space: "Sensors have located",
+	            "the source of the alien invasion. If you",
+	            "go there, you may be able to block their",
+	            "entry. The alien base is in the heart of",
+	            "your own home city, not far from the",
+	            "starport." Slowly and painfully, you get up",
+	            "and return to the fray."
+}
+
+map MAP12
+{
+	LevelName = "The Factory"
+	Label = "Level 12"
+	LevelPic = "CWILV11"
+	Author = "Sandy Petersen"
+	Next = "MAP13"
+	Music = "D_THEDA2"
+	SkyTexture = "SKY2"
+}
+
+map MAP13
+{
+	LevelName = "Downtown"
+	Label = "Level 13"
+	LevelPic = "CWILV12"
+	Author = "Sandy Petersen"
+	Next = "MAP14"
+	Music = "D_DOOM2"
+	SkyTexture = "SKY2"
+}
+
+map MAP14
+{
+	LevelName = "The Inmost Dens"
+	Label = "Level 14"
+	LevelPic = "CWILV13"
+	Author = "American McGee"
+	Next = "MAP15"
+	Music = "D_DDTBL2"
+	SkyTexture = "SKY2"
+}
+
+map MAP15
+{
+	LevelName = "Industrial Zone"
+	Label = "Level 15"
+	LevelPic = "CWILV14"
+	Author = "John Romero"
+	Next = "MAP16"
+	NextSecret = "MAP31"
+	Music = "D_RUNNI2"
+	SkyTexture = "SKY2"
+	InterBackdrop = "RROCK13"
+	InterMusic = "D_READ_M"
+	InterTextSecret = "Congratulations, you've found the secret",
+	                  "level! Looks like it's been built by",
+	                  "humans, rather than demons. You wonder",
+	                  "who the inmates of this corner of Hell",
+	                  "will be."
+}
+
+map MAP16
+{
+	LevelName = "Suburbs"
+	Label = "Level 16"
+	LevelPic = "CWILV15"
+	Author = "Sandy Petersen"
+	Next = "MAP17"
+	Music = "D_DEAD2"
+	SkyTexture = "SKY2"
+}
+
+map MAP17
+{
+	LevelName = "Tenements"
+	Label = "Level 17"
+	LevelPic = "CWILV16"
+	Author = "John Romero"
+	Next = "MAP18"
+	Music = "D_STLKS3"
+	SkyTexture = "SKY2"
+}
+
+map MAP18
+{
+	LevelName = "The Courtyard "
+	Label = "Level 18"
+	LevelPic = "CWILV17"
+	Author = "Sandy Petersen"
+	Next = "MAP19"
+	Music = "D_ROMERO"
+	SkyTexture = "SKY2"
+}
+
+map MAP19
+{
+	LevelName = "The Citadel ("
+	Label = "Level 19"
+	LevelPic = "CWILV18"
+	Author = "Sandy Petersen"
+	Next = "MAP20"
+	Music = "D_SHAWN2"
+	SkyTexture = "SKY2"
+}
+
+map MAP20
+{
+	LevelName = "Gotcha!"
+	Label = "Level 20"
+	LevelPic = "CWILV19"
+	Author = "John Romero"
+	Next = "MAP21"
+	Music = "D_MESSAG"
+	SkyTexture = "SKY2"
+	InterBackdrop = "RROCK07"
+	InterMusic = "D_READ_M"
+	InterText = "You are at the corrupt heart of the city,",
+	            "surrounded by the corpses of your enemies.",
+	            "You see no way to destroy the creatures'",
+	            "entryway on this side, so you clench your",
+	            "teeth and plunge through it.",
+	            "",
+	            "There must be a way to close it on the",
+	            "other side. What do you care if you've",
+	            "got to go through Hell to get to it?"
+}
+
+map MAP21
+{
+	LevelName = "Nirvana"
+	Label = "Level 21"
+	LevelPic = "CWILV20"
+	Author = "Sandy Petersen"
+	Next = "MAP22"
+	Music = "D_COUNT2"
+	SkyTexture = "SKY3"
+}
+
+map MAP22
+{
+	LevelName = "The Catacombs"
+	Label = "Level 22"
+	LevelPic = "CWILV21"
+	Author = "American McGee"
+	Next = "MAP23"
+	Music = "D_DDTBL3"
+	SkyTexture = "SKY3"
+}
+
+map MAP23
+{
+	LevelName = "Barrels o' Fun"
+	Label = "Level 23"
+	LevelPic = "CWILV22"
+	Author = "Sandy Petersen"
+	Next = "MAP24"
+	Music = "D_AMPIE"
+	SkyTexture = "SKY3"
+}
+
+map MAP24
+{
+	LevelName = "The Chasm"
+	Label = "Level 24"
+	LevelPic = "CWILV23"
+	Author = "Sandy Petersen"
+	Next = "MAP25"
+	Music = "D_THEDA3"
+	SkyTexture = "SKY3"
+}
+
+map MAP25
+{
+	LevelName = "Bloodfalls"
+	Label = "Level 25"
+	LevelPic = "CWILV24"
+	Author = "Shawn Green"
+	Next = "MAP26"
+	Music = "D_ADRIAN"
+	SkyTexture = "SKY3"
+}
+
+map MAP26
+{
+	LevelName = "The Abandoned Mines"
+	Label = "Level 26"
+	LevelPic = "CWILV25"
+	Author = "John Romero"
+	Next = "MAP27"
+	Music = "D_MESSG2"
+	SkyTexture = "SKY3"
+}
+
+map MAP27
+{
+	LevelName = "Monster Condo"
+	Label = "Level 27"
+	LevelPic = "CWILV26"
+	Author = "Sandy Petersen"
+	Next = "MAP28"
+	Music = "D_ROMER2"
+	SkyTexture = "SKY3"
+}
+
+map MAP28
+{
+	LevelName = "The Spirit World"
+	Label = "Level 28"
+	LevelPic = "CWILV27"
+	Author = "Sandy Petersen"
+	Next = "MAP29"
+	Music = "D_TENSE"
+	SkyTexture = "SKY3"
+}
+
+map MAP29
+{
+	LevelName = "The Living End"
+	Label = "Level 29"
+	LevelPic = "CWILV28"
+	Author = "John Romero"
+	Next = "MAP30"
+	Music = "D_SHAWN3"
+	SkyTexture = "SKY3"
+}
+
+map MAP30
+{
+	LevelName = "Icon of Sin"
+	Label = "Level 30"
+	LevelPic = "CWILV29"
+	Author = "Sandy Petersen"
+	Endcast = true
+	Music = "D_OPENIN"
+	SkyTexture = "SKY3"
+	InterBackdrop = "RROCK17"
+	InterMusic = "D_READ_M"
+	InterText = "The horrendous visage of the biggest",
+	            "demon you've ever seen crumbles before",
+	            "you, after you pump your rockets into",
+	            "his exposed brain. The monster shrivels",
+	            "up and dies, its thrashing limbs",
+	            "devastating untold miles of Hell's",
+	            "surface.",
+	            "",
+	            "You've done it. The invasion is over.",
+	            "Earth is saved. Hell is a wreck. You",
+	            "wonder where bad folks will go when they",
+	            "die, now. Wiping the sweat from your",
+	            "forehead you begin the long trek back",
+	            "home. Rebuilding Earth ought to be a",
+	            "lot more fun than ruining it was."
+}
+
+map MAP31
+{
+	LevelName = "Wolfenstein"
+	Label = "Secret Level"
+	LevelPic = "CWILV30"
+	Author = "Sandy Petersen"
+	Next = "MAP16"
+	NextSecret = "MAP32"
+	Music = "D_EVIL"
+	SkyTexture = "SKY3"
+	InterBackdrop = "RROCK19"
+	InterMusic = "D_READ_M"
+	InterTextSecret = "Congratulations, you've found the",
+	                  "super secret level! You'd better",
+	                  "blaze through this one!"
+}
+
+map MAP32
+{
+	LevelName = "Grosse"
+	Label = "Secret Level 2"
+	LevelPic = "CWILV31"
+	Author = "Sandy Petersen"
+	Next = "MAP16"
+	Music = "D_ULTIMA"
+	SkyTexture = "SKY3"
+}

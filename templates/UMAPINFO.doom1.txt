@@ -1,0 +1,477 @@
+map E1M1
+{
+	LevelName = "Hangar"
+	LevelPic = "WILV00"
+	Label = "E1M1"
+	Author = "John Romero"
+	Next = "E1M2"
+	Music = "D_E1M1"
+	SkyTexture = "SKY1"
+	Episode = clear
+	Episode = "M_EPI1", "Knee-Deep in the Dead", "k"
+}
+
+map E1M2
+{
+	LevelName = "Nuclear Plant"
+	LevelPic = "WILV01"
+	Label = "E1M2"
+	Author = "John Romero"
+	Next = "E1M3"
+	Music = "D_E1M2"
+	SkyTexture = "SKY1"
+}
+
+map E1M3
+{
+	LevelName = "Toxin Refinery"
+	LevelPic = "WILV02"
+	Label = "E1M3"
+	Author = "John Romero"
+	Next = "E1M4"
+	NextSecret = "E1M9"
+	Music = "D_E1M3"
+	SkyTexture = "SKY1"
+}
+
+map E1M4
+{
+	LevelName = "Command Control"
+	LevelPic = "WILV03"
+	Label = "E1M4"
+	Author = "Tom Hall, Sandy Petersen and John Romero"
+	Next = "E1M5"
+	Music = "D_E1M4"
+	SkyTexture = "SKY1"
+}
+
+map E1M5
+{
+	LevelName = "Phobos Lab"
+	LevelPic = "WILV04"
+	Label = "E1M5"
+	Author = "John Romero"
+	Next = "E1M6"
+	Music = "D_E1M5"
+	SkyTexture = "SKY1"
+}
+
+map E1M6
+{
+	LevelName = "Central Processing"
+	LevelPic = "WILV05"
+	Label = "E1M6"
+	Author = "John Romero"
+	Next = "E1M7"
+	Music = "D_E1M6"
+	SkyTexture = "SKY1"
+}
+
+map E1M7
+{
+	LevelName = "Computer Station"
+	LevelPic = "WILV06"
+	Label = "E1M7"
+	Author = "John Romero"
+	Next = "E1M8"
+	Music = "D_E1M7"
+	SkyTexture = "SKY1"
+}
+
+map E1M8
+{
+	LevelName = "Phobos Anomaly"
+	LevelPic = "WILV07"
+	Label = "E1M8"
+	Author = "Tom Hall and Sandy Petersen"
+	Music = "D_E1M8"
+	SkyTexture = "SKY1"
+	EndPic = "CREDIT"
+	InterBackdrop = "FLOOR4_8"
+	InterMusic = "D_VICTOR"
+	InterText = "Once you beat the big badasses and",
+	            "clean out the moon base you're supposed",
+	            "to win, aren't you? Aren't you? Where's",
+	            "your fat reward and ticket home? What",
+	            "the hell is this? It's not supposed to",
+	            "end this way!",
+	            "",
+	            "It stinks like rotten meat, but looks",
+	            "like the lost Deimos base. Looks like",
+	            "you're stuck on the shores of Hell.",
+	            "The only way out is through.",
+	            "",
+	            "To continue the DOOM experience, play",
+	            "The Shores of Hell and its amazing",
+	            "sequel, Inferno!"
+}
+
+map E1M9
+{
+	LevelName = "Military Base"
+	LevelPic = "WILV08"
+	Label = "E1M9"
+	Author = "John Romero"
+	Next = "E1M4"
+	Music = "D_E1M9"
+	SkyTexture = "SKY1"
+}
+
+map E2M1
+{
+	LevelName = "Deimos Anomaly"
+	LevelPic = "WILV10"
+	Label = "E2M1"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E2M2"
+	Music = "D_E2M1"
+	SkyTexture = "SKY2"
+	Episode = "M_EPI2", "The Shores of Hell", "t"
+}
+
+map E2M2
+{
+	LevelName = "Containment Area"
+	LevelPic = "WILV11"
+	Label = "E2M2"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E2M3"
+	Music = "D_E2M2"
+	SkyTexture = "SKY2"
+}
+
+map E2M3
+{
+	LevelName = "Refinery"
+	LevelPic = "WILV12"
+	Label = "E2M3"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E2M4"
+	Music = "D_E2M3"
+	SkyTexture = "SKY2"
+}
+
+map E2M4
+{
+	LevelName = "Deimos Lab"
+	LevelPic = "WILV13"
+	Label = "E2M4"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E2M5"
+	Music = "D_E2M4"
+	SkyTexture = "SKY2"
+}
+
+map E2M5
+{
+	LevelName = "Command Center"
+	LevelPic = "WILV14"
+	Label = "E2M5"
+	Author = "Sandy Petersen"
+	Next = "E2M6"
+	NextSecret = "E2M9"
+	Music = "D_E2M5"
+	SkyTexture = "SKY2"
+}
+
+map E2M6
+{
+	LevelName = "Halls of the Damned"
+	LevelPic = "WILV15"
+	Label = "E2M6"
+	Author = "Sandy Petersen"
+	Next = "E2M7"
+	Music = "D_E2M6"
+	SkyTexture = "SKY2"
+}
+
+map E2M7
+{
+	LevelName = "Spawning Vats"
+	LevelPic = "WILV16"
+	Label = "E2M7"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E2M8"
+	Music = "D_E2M7"
+	SkyTexture = "SKY2"
+}
+
+map E2M8
+{
+	LevelName = "Tower of Babel"
+	LevelPic = "WILV17"
+	Label = "E2M8"
+	Author = "Sandy Petersen"
+	Music = "D_E2M8"
+	SkyTexture = "SKY2"
+	EndPic = "VICTORY2"
+	InterBackdrop = "SFLR6_1"
+	InterMusic = "D_VICTOR"
+	InterText = "You've done it! The hideous cyber-",
+	            "demon lord that ruled the lost Deimos",
+	            "moon base has been slain and you",
+	            "are triumphant! But... where are",
+	            "you? You clamber to the edge of the",
+	            "moon and look down to see the awful",
+	            "truth.",
+	            "",
+	            "Deimos floats above Hell itself!",
+	            "You've never heard of anyone escaping",
+	            "from Hell, but you'll make the bastards",
+	            "sorry they ever heard of you! Quickly",
+	            "you rappel down to the surface of",
+	            "Hell.",
+	            "",
+	            "Now, it's on to the final chapter of",
+	            "DOOM! -- Inferno."
+}
+
+map E2M9
+{
+	LevelName = "Fortress of Mystery"
+	LevelPic = "WILV18"
+	Label = "E2M9"
+	Author = "Sandy Petersen"
+	Next = "E2M6"
+	Music = "D_E2M9"
+	SkyTexture = "SKY2"
+}
+
+map E3M1
+{
+	LevelName = "Hell Keep"
+	LevelPic = "WILV20"
+	Label = "E3M1"
+	Author = "Sandy Petersen"
+	Next = "E3M2"
+	Music = "D_E3M1"
+	SkyTexture = "SKY3"
+	Episode = "M_EPI3", "Inferno", "i"
+}
+
+map E3M2
+{
+	LevelName = "Slough of Despair"
+	LevelPic = "WILV21"
+	Label = "E3M2"
+	Author = "Sandy Petersen"
+	Next = "E3M3"
+	Music = "D_E3M2"
+	SkyTexture = "SKY3"
+}
+
+map E3M3
+{
+	LevelName = "Pandemonium"
+	LevelPic = "WILV22"
+	Label = "E3M3"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E3M4"
+	Music = "D_E3M3"
+	SkyTexture = "SKY3"
+}
+
+map E3M4
+{
+	LevelName = "House of Pain"
+	LevelPic = "WILV23"
+	Label = "E3M4"
+	Author = "Sandy Petersen"
+	Next = "E3M5"
+	Music = "D_E3M4"
+	SkyTexture = "SKY3"
+}
+
+map E3M5
+{
+	LevelName = "Unholy Cathedral"
+	LevelPic = "WILV24"
+	Label = "E3M5"
+	Author = "Sandy Petersen"
+	Next = "E3M6"
+	Music = "D_E3M5"
+	SkyTexture = "SKY3"
+}
+
+map E3M6
+{
+	LevelName = "Mt. Erebus"
+	LevelPic = "WILV25"
+	Label = "E3M6"
+	Author = "Tom Hall and Sandy Petersen"
+	Next = "E3M7"
+	NextSecret = "E3M9"
+	Music = "D_E3M6"
+	SkyTexture = "SKY3"
+}
+
+map E3M7
+{
+	LevelName = "Limbo"
+	LevelPic = "WILV26"
+	Label = "E3M7"
+	Author = "Sandy Petersen"
+	Next = "E3M8"
+	Music = "D_E3M7"
+	SkyTexture = "SKY3"
+}
+
+map E3M8
+{
+	LevelName = "Dis"
+	LevelPic = "WILV27"
+	Label = "E3M8"
+	Author = "Sandy Petersen"
+	Music = "D_E3M8"
+	SkyTexture = "SKY3"
+	EndBunny = true
+	InterBackdrop = "MFLR8_4"
+	InterMusic = "D_VICTOR"
+	InterText = "The loathsome spiderdemon that",
+	            "masterminded the invasion of the moon",
+	            "bases and caused so much death has had",
+	            "its ass kicked for all time.",
+	            "",
+	            "A hidden doorway opens and you enter.",
+	            "You've proven too tough for Hell to",
+	            "contain, and now Hell at least plays",
+	            "fair -- for you emerge from the door",
+	            "to see the green fields of Earth!",
+	            "Home at last.",
+	            "",
+	            "You wonder what's been happening on",
+	            "Earth while you were battling evil",
+	            "unleashed. It's good that no Hell-",
+	            "spawn could have come through that",
+	            "door with you..."
+}
+
+map E3M9
+{
+	LevelName = "Warrens"
+	LevelPic = "WILV28"
+	Label = "E3M9"
+	Author = "Sandy Petersen"
+	Next = "E3M7"
+	Music = "D_E3M9"
+	SkyTexture = "SKY3"
+}
+
+map E4M1
+{
+	LevelName = "Hell Beneath"
+	LevelPic = "WILV30"
+	Label = "E4M1"
+	Author = "American McGee"
+	Next = "E4M2"
+	Music = "D_E3M4"
+	SkyTexture = "SKY4"
+	Episode = "M_EPI4", "Thy Flesh Consumed", "t"
+}
+
+map E4M2
+{
+	LevelName = "Perfect Hatred"
+	LevelPic = "WILV31"
+	Label = "E4M2"
+	Author = "John Romero"
+	Next = "E4M3"
+	NextSecret = "E4M9"
+	Music = "D_E3M2"
+	SkyTexture = "SKY4"
+}
+
+map E4M3
+{
+	LevelName = "Sever the Wicked"
+	LevelPic = "WILV32"
+	Label = "E4M3"
+	Author = "Shawn Green"
+	Next = "E4M4"
+	Music = "D_E3M3"
+	SkyTexture = "SKY4"
+}
+
+map E4M4
+{
+	LevelName = "Unruly Evil"
+	LevelPic = "WILV33"
+	Label = "E4M4"
+	Author = "American McGee"
+	Next = "E4M5"
+	Music = "D_E1M5"
+	SkyTexture = "SKY4"
+}
+
+map E4M5
+{
+	LevelName = "They Will Repent"
+	LevelPic = "WILV34"
+	Label = "E4M5"
+	Author = "Tim Willits"
+	Next = "E4M6"
+	Music = "D_E2M7"
+	SkyTexture = "SKY4"
+}
+
+map E4M6
+{
+	LevelName = "Against Thee Wickedly"
+	LevelPic = "WILV35"
+	Label = "E4M6"
+	Author = "John Romero"
+	Next = "E4M7"
+	Music = "D_E2M4"
+	SkyTexture = "SKY4"
+}
+
+map E4M7
+{
+	LevelName = "And Hell Followed"
+	LevelPic = "WILV36"
+	Label = "E4M7"
+	Author = "John Anderson"
+	Next = "E4M8"
+	Music = "D_E2M6"
+	SkyTexture = "SKY4"
+}
+
+map E4M8
+{
+	LevelName = "Unto the Cruel"
+	LevelPic = "WILV37"
+	Label = "E4M8"
+	Author = "Shawn Green"
+	Music = "D_E2M5"
+	SkyTexture = "SKY4"
+	EndPic = "ENDPIC"
+	InterBackdrop = "MFLR8_3"
+	InterMusic = "D_VICTOR"
+	InterText = "The spider mastermind must have sent forth",
+	            "its legions of Hellspawn before your",
+	            "final confrontation with that terrible",
+	            "beast from Hell. But you stepped forward",
+	            "and brought forth eternal damnation and",
+	            "suffering upon the horde as a true hero",
+	            "would in the face of something so evil.",
+	            "",
+	            "Besides, someone was gonna pay for what",
+	            "happened to Daisy, your pet rabbit.",
+	            "",
+	            "But now, you see spread before you more",
+	            "potential pain and gibbitude as a nation",
+	            "of demons run amok in our cities.",
+	            "",
+	            "Next stop, Hell on Earth!"
+}
+
+map E4M9
+{
+	LevelName = "Fear"
+	LevelPic = "WILV38"
+	Label = "E4M9"
+	Author = "Tim Willits"
+	Next = "E4M3"
+	Music = "D_E1M9"
+	SkyTexture = "SKY4"
+}
