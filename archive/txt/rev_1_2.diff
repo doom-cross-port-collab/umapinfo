@@ -1,0 +1,11 @@
+--- rev_1_1.txt
++++ rev_1_2.txt
+@@ -164,7 +164,7 @@
+ ShortBlueTorch
+ ShortGreenTorch
+ ShortRedTorch
+-Slalagtite
++Stalagtite
+ TechPillar
+ CandleStick
+ Candelabra

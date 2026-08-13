@@ -1,0 +1,20 @@
+--- rev_1_4.txt
++++ rev_1_5.txt
+@@ -307,10 +307,17 @@
+     PlasmaBall2
+     EvilSceptre
+     UnholyBible
++    MusicChanger
++    Deh_Actor_145
++    [...]
++    Deh_Actor_249
+ 
+ 
+ Revisions:
+ 
++Rev 1.5 (@Shadow-Hog, Apr 17 2021)
++ * Add in all the additional actor names for DEHEXTRA.
++
+ Rev 1.4 (@rfomin, Mar 23 2021)
+  * Clarify the 'episode' field in the case of Doom 2 and Chex Quest.
+ 
