@@ -165,8 +165,8 @@ PhoenixRodAmmo
 PhoenixRodHefty
 BlasterAmmo
 BlasterHefty
-Deh_Actor_160
-Deh_Actor_161
+SoundWind
+SoundWaterfall
 Deh_Actor_162
 Deh_Actor_163
 Deh_Actor_164
