@@ -1,0 +1,4 @@
+https://github.com/kraflab/umapinfo/
+
+* f07af4b166eeecfe87bcd3fa9b85ea8d116219eb Update default levelpic behaviour
+* 02b0c3681869c569eca65067c2264829b60e166f Add author field
