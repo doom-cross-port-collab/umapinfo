@@ -88,13 +88,13 @@ Ends the game after this level, showing the horizontal bunny scroller. Skips the
 `enddemon = true`
 Ends the game after this level, showing the vertical demon scroller. Skips the 'entering level' screen.
 
-### EndPalette
-`endpalette = "palette"`
-Defines the palette to use for the end graphics: 'endpic', 'endbunny' and 'enddemon'.
-
 ### EndCast
 `endcast = true`
 Ends the game after this level, showing the cast call. Skips the 'entering level' screen.
+
+### EndPalette
+`endpalette = "palette"`
+Defines the palette to use for the end graphics: 'endpic', 'endbunny', 'enddemon' and 'endcast'.
 
 ### NoIntermission
 `nointermission = true/false`
