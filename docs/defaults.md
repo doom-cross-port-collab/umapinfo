@@ -1,5 +1,7 @@
 # UMAPINFO Specification Rev 2.? Default Key Values
 
+TODO: explicitly indicate that defaults for outside of the ranges defined by iwads are outside the scope of this spec and no particular defaults should be assumed
+
 ## Global defaults
 ### Author
 Empty string: ""
@@ -30,9 +32,7 @@ TODO: should partime be in this table since it is cleared when defining a map in
 #### EndGame
 describe endgame/endbunny/endpic/endcast
 
-#### Intertexts
-
-##### E1M8:
+#### E1M8 InterText
 ```
 "Once you beat the big badasses and",
 "clean out the moon base you're supposed",
@@ -89,9 +89,7 @@ TODO: how do ports treat E4 maps when using non ultimate doom.wad?
 |E3M8| ?       |E3M8 |WILV27  |?   | ?        |SKY3      |D_E3M8|30     |MFLR8_4      |false         |          |(see below)[#e3m8-bossaction] |
 |E3M9| ?       |E3M9 |WILV28  |E3M7| ?        |SKY3      |D_E3M9|135    |             |false         |          |clear     |
 
-#### Intertexts
-
-##### E2M8:
+#### E2M8 InterText
 ```
 "You've done it! The hideous cyber-",
 "demon lord that ruled the lost Deimos",
@@ -112,7 +110,7 @@ TODO: how do ports treat E4 maps when using non ultimate doom.wad?
 "DOOM! -- Inferno"
 ```
 
-#### E3M8:
+#### E3M8 InterText
 ```
 "The loathsome spiderdemon that",
 "masterminded the invasion of the moon",
@@ -159,14 +157,58 @@ The default BossAction for E4M8 is unrepresentable in UMAPINFO. The three compon
 
 ### `doom2.wad`
 
+|Map  |Levelname|Label|LevelPic|Next |NextSecret|SkyTexture|Music   |ParTime|InterBackdrop|NoIntermission|InterMusic|BossAction|
+|-----|---------|-----|--------|-----|----------|----------|--------|-------|-------------|--------------|----------|----------|
+|MAP01| ?       |?    |CWILV01 |MAP02| ?        |SKY1      |D_RUNNIN|30     |             |false         |          |clear     |
+|MAP02| ?       |?    |CWILV02 |MAP03| ?        |SKY1      |D_STALKS|90     |             |false         |          |clear     |
+|MAP03| ?       |?    |CWILV03 |MAP04| ?        |SKY1      |D_COUNTD|120    |             |false         |          |clear     |
+|MAP04| ?       |?    |CWILV04 |MAP05| ?        |SKY1      |D_BETWEE|120    |             |false         |          |clear     |
+|MAP05| ?       |?    |CWILV05 |MAP06| ?        |SKY1      |D_DOOM  |90     |             |false         |          |clear     |
+|MAP06| ?       |?    |CWILV06 |MAP07| ?        |SKY1      |D_THE_DA|150    |SLIME16      |false         |          |clear     |
+|MAP07| ?       |?    |CWILV07 |MAP08| ?        |SKY1      |D_SHAWN |120    |             |false         |          |(see below)[#map07-bossaction] |
+|MAP08| ?       |?    |CWILV08 |MAP09| ?        |SKY1      |D_DDTBLU|120    |             |false         |          |clear     |
+|MAP09| ?       |?    |CWILV09 |MAP10| ?        |SKY1      |D_IN_CIT|270    |             |false         |          |clear     |
+|MAP10| ?       |?    |CWILV10 |MAP11| ?        |SKY1      |D_DEAD  |90     |             |false         |          |clear     |
+|MAP11| ?       |?    |CWILV11 |MAP12| ?        |SKY1      |D_STLKS2|210    |RROCK14      |false         |          |clear     |
+|MAP12| ?       |?    |CWILV12 |MAP13| ?        |SKY2      |D_THEDA2|150    |             |false         |          |clear     |
+|MAP13| ?       |?    |CWILV13 |MAP14| ?        |SKY2      |D_DOOM2 |150    |             |false         |          |clear     |
+|MAP14| ?       |?    |CWILV14 |MAP15| ?        |SKY2      |D_DDTBL2|150    |             |false         |          |clear     |
+|MAP15| ?       |?    |CWILV15 |MAP16|MAP31     |SKY2      |D_RUNNI2|210    |RROCK13      |false         |          |clear     |
+|MAP16| ?       |?    |CWILV16 |MAP17| ?        |SKY2      |D_DEAD2 |150    |             |false         |          |clear     |
+|MAP17| ?       |?    |CWILV17 |MAP18| ?        |SKY2      |D_STLKS3|420    |             |false         |          |clear     |
+|MAP18| ?       |?    |CWILV18 |MAP19| ?        |SKY2      |D_ROMERO|150    |             |false         |          |clear     |
+|MAP19| ?       |?    |CWILV19 |MAP20| ?        |SKY2      |D_SHAWN2|210    |             |false         |          |clear     |
+|MAP20| ?       |?    |CWILV20 |MAP21| ?        |SKY2      |D_MESSAG|150    |RROCK07      |false         |          |clear     |
+|MAP21| ?       |?    |CWILV21 |MAP22| ?        |SKY3      |D_COUNT2|240    |             |false         |          |clear     |
+|MAP22| ?       |?    |CWILV22 |MAP23| ?        |SKY3      |D_DDTBL3|150    |             |false         |          |clear     |
+|MAP23| ?       |?    |CWILV23 |MAP24| ?        |SKY3      |D_AMPIE |180    |             |false         |          |clear     |
+|MAP24| ?       |?    |CWILV24 |MAP25| ?        |SKY3      |D_THEDA3|150    |             |false         |          |clear     |
+|MAP25| ?       |?    |CWILV25 |MAP26| ?        |SKY3      |D_ADRIAN|150    |             |false         |          |clear     |
+|MAP26| ?       |?    |CWILV26 |MAP27| ?        |SKY3      |D_MESSG2|300    |             |false         |          |clear     |
+|MAP27| ?       |?    |CWILV27 |MAP28| ?        |SKY3      |D_ROMER2|330    |             |false         |          |clear     |
+|MAP28| ?       |?    |CWILV28 |MAP29| ?        |SKY3      |D_TENSE |420    |             |false         |          |clear     |
+|MAP29| ?       |?    |CWILV29 |MAP30| ?        |SKY3      |D_SHAWN3|300    |             |false         |          |clear     |
+|MAP30| ?       |?    |CWILV30 |?    | ?        |SKY3      |D_OPENIN|180    |RROCK17      |false         |          |?         |
+|MAP31| ?       |?    |CWILV31 |MAP16|MAP31     |SKY3      |D_EVIL  |120    |RROCK19      |false         |          |clear     |
+|MAP32| ?       |?    |CWILV32 |MAP16| ?        |SKY3      |D_ULTIMA|30     |             |false         |          |clear     |
+
+#### MAP06 InterText
+#### MAP11 InterText
+#### MAP20 InterText
+#### MAP30 InterText
+#### MAP15 InterTextSecret
+#### MAP31 InterTextSecret
+
+#### MAP07 BossAction
+
 ### `tnt.wad`
 
-Defaults the same as doom2.wad except for map names (i think)
+Defaults the same as doom2.wad except for map names and intertexts (i think)
 list them
 
 ### `plutonia.wad`
 
-Defaults the same as doom2.wad except for map names (i think)
+Defaults the same as doom2.wad except for map names and intertexts (i think)
 list them
 
 ### `chex.wad`
