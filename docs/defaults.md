@@ -4,6 +4,9 @@
 ### Author
 Empty string: ""
 
+### InterText
+`clear`, unless specified otherwise below.
+
 ## Map-specific defaults
 The default values for most keys depend on both the map and the currently loaded IWAD.
 TODO: are level names set in umapinfo treated differently from never setting the name?
