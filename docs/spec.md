@@ -1,4 +1,4 @@
-# UMAPINFO Specification Rev 2.2
+# UMAPINFO Specification Rev 2.?
 Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
@@ -20,7 +20,7 @@ Values can be strings, enclosed in quotation marks (`"`), numbers or identifiers
 The map names are limited to the format of the currently loaded IWAD, i.e. Doom 2 only supports MAPxx entries and Doom 1 only ExMy entries. The numbers x and y can exceed their original limits, though, so MAP50, E5M6 or even MAP100 or E1M10 are valid map names for their respective game. This limit comes from the game using numeric variables 'gameepisode' and 'gamemap' to identify a level. It may later be decided to lift the naming restriction but this cannot be done without some extensive refactoring which simply exceeds the scope of the initial implementation.
 
 ## Keys
-Currently the following keys are supported. If not given, the hardcoded default will be used, unless the following list says differently.
+Currently the following keys are supported. If not given, the defaults listed [here](./defaults.md) will be used, unless the following list says differently.
 
 ### Levelname
 `levelname = "name"`
@@ -28,6 +28,7 @@ Specifies the readable name of the level (e.g. "Hangar") This will be used in th
 
 ### Label
 `label = "name"`
+TODO: properly clarify what "mapname" is (lump name of the map)
 Specifies the string to prepend to the levelname on the automap. If not specified the mapname will be used by default followed by a colon and a space character (e.g. "E1M1: ").
 
 `label = clear`
@@ -44,6 +45,10 @@ Specifies the patch that is used on the status screen for 'entering' and 'finish
 ### Next
 `next = "mapname"`
 Specifies the map the regular exit leads to. In Doom 1 this may cross episodes.
+TODO: further clarify how next and nextsecret work
+remove specific mention of doom 1, this is also true of doom 2 with episodes
+maybe clarify that episodes arent really collections of levels but just a menu item and a beginning map
+especially in doom 2
 
 ### NextSecret
 `nextsecret = "mapname"`
@@ -137,6 +142,8 @@ Normally, if some information cannot be found, the engine will fall back to its 
 - `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
 
 - `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used. If the author field is set, it will also be shown.
+
+- `partime` TODO: dont display par time if a map is defined in UMAPINFO but partime is not explicitly set
 
 ## Example
 ```
