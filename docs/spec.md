@@ -28,6 +28,7 @@ Specifies the readable name of the level (e.g. "Hangar") This will be used in th
 
 ### Label
 `label = "name"`
+TODO: properly clarify what "mapname" is (lump name of the map)
 Specifies the string to prepend to the levelname on the automap. If not specified the mapname will be used by default followed by a colon and a space character (e.g. "E1M1: ").
 
 `label = clear`
@@ -72,8 +73,6 @@ Specifies the background for the 'entering level' screen. This can override Doom
 ### ParTime
 `partime = seconds`
 Specifies the level's par time.
-TODO:
-sounds like some ports dont display par time if a map is defined in UMAPINFO but partime is not explicitly set
 
 ### EndGame
 `endgame = false`
@@ -143,6 +142,8 @@ Normally, if some information cannot be found, the engine will fall back to its 
 - `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
 
 - `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used. If the author field is set, it will also be shown.
+
+- `partime` TODO: dont display par time if a map is defined in UMAPINFO but partime is not explicitly set
 
 ## Example
 ```
