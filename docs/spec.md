@@ -128,6 +128,42 @@ Defines a boss death action, overriding any map default actions. Tag 0 is not al
 `bossaction = clear`
 Disables any previously-defined boss actions (including map defaults) for the given map.
 
+### Jumping
+`jumping = disallow`
+Jumping is disallowed. Jump actions should be prevented and be treated as a no-op.
+
+`jumping = allow`
+The default, jumping is not prevented in ports which support jumping.
+
+`jumping = require`
+Enables jumping. If jumping is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support jumping.
+
+### Crouching
+`crouching = disallow`
+Crouching is disallowed. Crouch actions should be prevented and be treated as a no-op.
+
+`crouching = allow`
+The default, crouching is not prevented in ports which support crouching.
+
+`crouching = require`
+Enables crouching. If crouching is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support crouching.
+
+### FreeAim
+`freeaim = disallow`
+Vertical aiming is disallowed.
+
+`freeaim = allow`
+The default, vertical aiming is not prevented in ports which support it.
+
+`freeaim = require`
+Enables vertical aiming as well as freelook. If either is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support freelook or vertical aiming.
+
 ## Default handling
 
 Normally, if some information cannot be found, the engine will fall back to its hard coded implementation, with a few exceptions:
