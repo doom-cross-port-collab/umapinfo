@@ -1,4 +1,4 @@
-# UMAPINFO Specification Rev 2.?
+# UMAPINFO Specification Rev 2.2
 Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
