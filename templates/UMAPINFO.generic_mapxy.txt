@@ -7,6 +7,7 @@ map MAP01
 	Next = "MAP02"
 	Music = "D_RUNNIN"
 	SkyTexture = "SKY1"
+	ParTime = 0
 	Episode = clear
 	Episode = "-", "Name", "1"
 }
@@ -20,6 +21,7 @@ map MAP02
 	Next = "MAP03"
 	Music = "D_STALKS"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP03
@@ -31,6 +33,7 @@ map MAP03
 	Next = "MAP04"
 	Music = "D_COUNTD"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP04
@@ -42,6 +45,7 @@ map MAP04
 	Next = "MAP05"
 	Music = "D_BETWEE"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP05
@@ -53,6 +57,7 @@ map MAP05
 	Next = "MAP06"
 	Music = "D_DOOM"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP06
@@ -64,6 +69,7 @@ map MAP06
 	Next = "MAP07"
 	Music = "D_THE_DA"
 	SkyTexture = "SKY1"
+	ParTime = 0
 	InterBackdrop = "SLIME16"
 	InterMusic = "D_READ_M"
 	InterText = ""
@@ -78,6 +84,7 @@ map MAP07
 	Next = "MAP08"
 	Music = "D_SHAWN"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP08
@@ -89,6 +96,7 @@ map MAP08
 	Next = "MAP09"
 	Music = "D_DDTBLU"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP09
@@ -100,6 +108,7 @@ map MAP09
 	Next = "MAP10"
 	Music = "D_IN_CIT"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP10
@@ -111,6 +120,7 @@ map MAP10
 	Next = "MAP11"
 	Music = "D_DEAD"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map MAP11
@@ -122,6 +132,7 @@ map MAP11
 	Next = "MAP12"
 	Music = "D_STLKS2"
 	SkyTexture = "SKY1"
+	ParTime = 0
 	InterBackdrop = "RROCK14"
 	InterMusic = "D_READ_M"
 	InterText = ""
@@ -136,6 +147,7 @@ map MAP12
 	Next = "MAP13"
 	Music = "D_THEDA2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP13
@@ -147,6 +159,7 @@ map MAP13
 	Next = "MAP14"
 	Music = "D_DOOM2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP14
@@ -158,6 +171,7 @@ map MAP14
 	Next = "MAP15"
 	Music = "D_DDTBL2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP15
@@ -170,6 +184,7 @@ map MAP15
 	NextSecret = "MAP31"
 	Music = "D_RUNNI2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 	InterBackdrop = "RROCK13"
 	InterMusic = "D_READ_M"
 	InterTextSecret = ""
@@ -184,6 +199,7 @@ map MAP16
 	Next = "MAP17"
 	Music = "D_DEAD2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP17
@@ -195,6 +211,7 @@ map MAP17
 	Next = "MAP18"
 	Music = "D_STLKS3"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP18
@@ -206,6 +223,7 @@ map MAP18
 	Next = "MAP19"
 	Music = "D_ROMERO"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP19
@@ -217,6 +235,7 @@ map MAP19
 	Next = "MAP20"
 	Music = "D_SHAWN2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map MAP20
@@ -228,6 +247,7 @@ map MAP20
 	Next = "MAP21"
 	Music = "D_MESSAG"
 	SkyTexture = "SKY2"
+	ParTime = 0
 	InterBackdrop = "RROCK07"
 	InterMusic = "D_READ_M"
 	InterText = ""
@@ -242,6 +262,7 @@ map MAP21
 	Next = "MAP22"
 	Music = "D_COUNT2"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP22
@@ -253,6 +274,7 @@ map MAP22
 	Next = "MAP23"
 	Music = "D_DDTBL3"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP23
@@ -264,6 +286,7 @@ map MAP23
 	Next = "MAP24"
 	Music = "D_AMPIE"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP24
@@ -275,6 +298,7 @@ map MAP24
 	Next = "MAP25"
 	Music = "D_THEDA3"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP25
@@ -286,6 +310,7 @@ map MAP25
 	Next = "MAP26"
 	Music = "D_ADRIAN"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP26
@@ -297,6 +322,7 @@ map MAP26
 	Next = "MAP27"
 	Music = "D_MESSG2"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP27
@@ -308,6 +334,7 @@ map MAP27
 	Next = "MAP28"
 	Music = "D_ROMER2"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP28
@@ -319,6 +346,7 @@ map MAP28
 	Next = "MAP29"
 	Music = "D_TENSE"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP29
@@ -330,6 +358,7 @@ map MAP29
 	Next = "MAP30"
 	Music = "D_SHAWN3"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map MAP30
@@ -341,6 +370,7 @@ map MAP30
 	Endcast = true
 	Music = "D_OPENIN"
 	SkyTexture = "SKY3"
+	ParTime = 0
 	InterBackdrop = "RROCK17"
 	InterMusic = "D_READ_M"
 	InterText = ""
@@ -356,6 +386,7 @@ map MAP31
 	NextSecret = "MAP32"
 	Music = "D_EVIL"
 	SkyTexture = "SKY3"
+	ParTime = 0
 	InterBackdrop = "RROCK19"
 	InterMusic = "D_READ_M"
 	InterTextSecret = ""
@@ -370,4 +401,5 @@ map MAP32
 	Next = "MAP16"
 	Music = "D_ULTIMA"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
