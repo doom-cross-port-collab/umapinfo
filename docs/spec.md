@@ -174,6 +174,14 @@ Normally, if some information cannot be found, the engine will fall back to its 
 
 - `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used. If the author field is set, it will also be shown.
 
+## Port-exclusive keywords
+
+In order to not need to define multiple MAPINFO-type lumps for multiple engines to be supported correctly, UMAPINFO also includes support for port-exclusive keywords, to help deduplicate work for modders.  
+Such a feature can also proof useful for engines that aim to have their own exclusive modding features, and may need to define these new entries somewhere.  
+Such keywords are in the form of "`portname_keyword`", i.e. where each one is prefixed with the target engine's name and the crucial underscore (`_`).  
+Take, for example, the following: `MyFancyDoom_EnableBloom = true`, or `MyBizarreDoom_AnitGravity = true`, etc.  
+Each keyword's respective values, or list thereof, are entirely and exclusively up to the discretion of each implementing engine, all other ports must ignore such keywords not intended for them.  
+
 ## Example
 ```
 MAP E1M7
