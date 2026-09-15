@@ -24,7 +24,9 @@ Currently the following keys are supported. If not given, the hardcoded default 
 
 ### Levelname
 `levelname = "name"`
-Specifies the readable name of the level (e.g. "Hangar") This will be used in the automap and also on the status screen if no name patch is specified.
+Specifies the readable name of the level, e.g. "Hangar" or "Entryway".  
+This will be used in the automap, and any port-exclusive other forms of displaying the level's name as-is, e.g. "level name announcement" UI elements.  
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
 
 ### Label
 `label = "name"`
@@ -35,11 +37,16 @@ Only print the levelname on the automap.
 
 ### Author
 `author = "name"`
-Specifies the level author's name.
+Specifies the level author's name.  
+While vanilla Doom did not have any methods of providing credits to map authors in-game, outside of modifying the equivalent `levelpic` entry, this option is provided for mod authors to include level design credits, directly within the target levels.
+Ports are free to use this to display this information as chosen, e.g. in consoles, or export it via other modding features, with the exception of the intermisison screens.
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
 
 ### LevelPic
 `levelpic = "graphic"`
-Specifies the patch that is used on the status screen for 'entering' and 'finished'.
+Specifies the "patch" graphic that is used on the 'entering' and 'finished' intermission screens.  
+If specified, do not draw level name or author name, just the level pic.  
+If NOT specified, do not draw the vanilla default level pics, i.e. `WILV*`, or `CWILV*` — instead drawing `levelname` and, if present, `author`.
 
 ### Next
 `next = "mapname"`
