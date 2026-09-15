@@ -21,8 +21,8 @@ Values can be strings, enclosed in quotation marks (`"`), numbers or identifiers
 The map names are limited to the format of the currently loaded IWAD, i.e. Doom 2 only supports MAPxx entries and Doom 1 only ExMy entries. The numbers x and y can exceed their original limits, though, so MAP50, E5M6 or even MAP100 or E1M10 are valid map names for their respective game. This limit comes from the game using numeric variables 'gameepisode' and 'gamemap' to identify a level. It may later be decided to lift the naming restriction but this cannot be done without some extensive refactoring which simply exceeds the scope of the initial implementation.
 
 ## Comments
-Implementing engines are only expected to support comments in single-line C++ format (`//`), i.e. two touching forward slashes mark the entire remainder of the line as a comment that is ignored by the reading parser.  
-This spec does not define support for multi-line C format (`/* */`), single-line asseembly format (`;`) or single-line scripting format (`#`) comments.
+Implementing engines are only expected to support comments in single-line C++ format (`//`), or multi-line C format (`/* */`).
+No other comment styles are expected to be support by implementing engines.
 
 ## Keys
 Currently the following keys are supported. If not given, the hardcoded default will be used, unless the following list says differently.
