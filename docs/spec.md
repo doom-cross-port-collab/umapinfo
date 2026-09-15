@@ -108,7 +108,12 @@ Disables default intermission text for the given map's secret exit.
 
 ### InterBackdrop
 `interbackdrop = "graphic"`
-Backdrop to be used for intertext and intertextsecret. If it does not specify a valid flat, it will be drawn as a patch instead. If not specified and there is no default for current map, the FLOOR4_8 flat will be used.
+Backdrop to be used for intertext and intertextsecret.  
+Can be either a "patch" format _fullscreen graphic_, stored in the "global" namespace, or a 64x64 RAW format _flat_, stored in the "flat" file system namespace, e.g between the `F_START` and `F_END` markers.  
+If the defined entry is present in the "global" namespace, and NOT present in the "flat" namespace, treat lump name as a "patch" format graphic, otherwise treat as a flat.  
+If not defined for the current map, either via UMAPINFO or by the vanilla Doom text screen flats, use the flat "`FLOOR4_8`" as a default.
+Fullscree graphics, normally 320x200 for the existing 4:3 vanilla lumps, but otherwise independent of exact size, are expected to be drawn from the top of the screen downwards, and horizontally centered.
+Flats are expected to be infinitely tiled on the screen.
 
 ### InterMusic
 `intermusic = "song"`
