@@ -84,7 +84,7 @@ Specifies the level's par time.
 
 ### EndGame
 `endgame = false`
-Overrides a default map exit (e.g. ExM8 or MAP30)
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
 
 `endgame = true`
 Ends the game after this level, showing the default post-game screen for the current episode.
@@ -98,20 +98,29 @@ Skips the 'entering level' screen.
 Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### EndBunny
+`endbunny = false`
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+
 `endbunny = true`
 Ends the game after this level, showing the bunny scroller.
 Skips the 'entering level' screen.
 Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### EndCast
+`endcast = false`
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+
 `endcast = true`
 Ends the game after this level, showing the cast call.
 Skips the 'entering level' screen.
 Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### NoIntermission
-`nointermission = true/false`
-Currently only working for levels that end the game: When true skips the 'level finished' screen.
+`nointermission = true`
+Currently only working for levels that end the game, skips the 'level finished' screen.
+
+`nointermission = false`
+Forces ExM8 levels in Doom 1 to _not_ skip the 'level finished' screen.
 
 ### InterText
 `intertext = "text"`
