@@ -1,0 +1,8 @@
+[default]
+
+[default.extend-words]
+Stalagtite = "Stalagtite"
+OPENIN = "OPENIN"
+MESSAG = "MESSAG"
+BETWEE = "BETWEE"
+RUNNIN = "RUNNIN"
