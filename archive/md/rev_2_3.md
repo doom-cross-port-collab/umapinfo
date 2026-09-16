@@ -1,0 +1,382 @@
+# UMAPINFO Specification Rev 2.3
+Contents:
+- [Map Entry](#map-entry)
+- [Keys](#keys)
+- [Default Handling](#default-handling)
+- [Example](#example)
+- [Thingtypes](#thingtypes)
+
+## Map entry
+```
+MAP mapname
+{
+    // Comment or description
+    key = value
+    key = value1, value2,...
+    ...
+}
+```
+Values can be strings, enclosed in quotation marks (`"`), numbers or identifiers. Identifiers are _case insensitive_ names that start with a letter and may only contain letters, numbers or the underscore (`_`) — this applies to **both** keys and values. Strings expected to contain contain **lump** or **texture** names are also to be treated as case-insensitive.
+
+The map names are limited to the format of the currently loaded IWAD, i.e. Doom 2 only supports MAPxx entries and Doom 1 only ExMy entries. The numbers x and y can exceed their original limits, though, so MAP50, E5M6 or even MAP100 or E1M10 are valid map names for their respective game. This limit comes from the game using numeric variables 'gameepisode' and 'gamemap' to identify a level. It may later be decided to lift the naming restriction but this cannot be done without some extensive refactoring which simply exceeds the scope of the initial implementation.
+
+## Comments
+Implementing engines are only expected to support comments in single-line C++ format (`//`), or multi-line C format (`/* */`).
+No other comment styles are expected to be support by implementing engines.
+
+## Keys
+Currently the following keys are supported. If not given, the hardcoded default will be used, unless the following list says differently.
+
+### Levelname
+`levelname = "name"`
+Specifies the readable name of the level, e.g. "Hangar" or "Entryway".  
+This will be used in the automap, and any port-exclusive other forms of displaying the level's name as-is, e.g. "level name announcement" UI elements.  
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
+
+### Label
+`label = "name"`
+Specifies the string to prepend to the levelname on the automap. If not specified the mapname will be used by default followed by a colon and a space character (e.g. "E1M1: ").
+
+`label = clear`
+Only print the levelname on the automap.
+
+### Author
+`author = "name"`
+Specifies the level author's name.  
+While vanilla Doom did not have any methods of providing credits to map authors in-game, outside of modifying the equivalent `levelpic` entry, this option is provided for mod authors to include level design credits, directly within the target levels.  
+Ports are free to use this to display this information as chosen, with the exception of the intermisison screens.  
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
+
+### LevelPic
+`levelpic = "graphic"`
+Specifies the graphic that is used on the 'entering level' and 'finished level' screens.  
+This graphic usually contains the name of the level without additional labels such as "MAP01", and also optionally contains the map author.  
+If NOT specified, then `levelname` and `author` (if present) will be printed using font graphics in the place of `levelpic`, allowing authors to change the level name in the score screen without needing to supply custom graphics.  
+If specified, do not draw `levelname` or `author`, just the `levelpic` itself.
+
+### Next
+`next = "mapname"`
+Specifies the map the regular exit leads to. In Doom 1 this may cross episodes.
+
+### NextSecret
+`nextsecret = "mapname"`
+Specifies the map the secret exit leads to. In Doom 1 this may cross episodes.
+
+### SkyTexture
+`skytexture = "texture"`
+Specifies the sky texture to be used for this map.
+
+### Music
+`music = "song"`
+Specifies the music to be played on this map.
+
+### ExitPic
+`exitpic = "graphic"`
+Specifies the background for the 'level finished' screen. This can override Doom's animated screens for E1-3.
+
+### EnterPic
+`enterpic = "graphic"`
+Specifies the background for the 'entering level' screen. This can override Doom's animated screens for E1-3.
+
+### ParTime
+`partime = seconds`
+Specifies the level's par time.
+
+### EndGame
+`endgame = false`
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+
+`endgame = true`
+Ends the game after this level, showing the default post-game screen for the current episode.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+
+### EndPic
+`endpic = "graphic"`
+Ends the game after this level, showing the specified graphic as an end screen.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+
+### EndBunny
+`endbunny = false`
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+
+`endbunny = true`
+Ends the game after this level, showing the bunny scroller.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+
+### EndCast
+`endcast = false`
+Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+
+`endcast = true`
+Ends the game after this level, showing the cast call.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+
+### NoIntermission
+`nointermission = true`
+Currently only working for levels that end the game, skips the 'level finished' screen.
+
+`nointermission = false`
+Forces ExM8 levels in Doom 1 to _not_ skip the 'level finished' screen.
+
+### InterText
+`intertext = "text"`
+Shows an intermission text screen after the level is exited through the regular exit. "text" can be multiple lines, for ease of reading they can be specified as multiple parameters over several lines (see example below.)
+
+`intertext = clear`
+Disables default intermission text for the given map (e.g. to go from MAP06 to MAP07 without a text showing up.)
+
+### InterTextSecret
+`intertextsecret = "text"`
+Shows an intermission text screen after the level is exited through the secret exit. This will never default to 'intertext'. If not given, the defaults will be used.
+
+`intertextsecret = clear`
+Disables default intermission text for the given map's secret exit.
+
+### InterBackdrop
+`interbackdrop = "graphic"`
+Backdrop to be used for intertext and intertextsecret.  
+Can be either a "patch" format _fullscreen graphic_, stored in the "global" namespace, or a 64x64 RAW format _flat_, stored in the "flat" file system namespace, e.g between the `F_START` and `F_END` markers.  
+If the defined entry is present in the "global" namespace, and NOT present in the "flat" namespace, treat lump name as a "patch" format graphic, otherwise treat as a flat.  
+If not defined for the current map, either via UMAPINFO or by the vanilla Doom text screen flats, use the flat "`FLOOR4_8`" as a default.
+Fullscree graphics, normally 320x200 for the existing 4:3 vanilla lumps, but otherwise independent of exact size, are expected to be drawn from the top of the screen downwards, and horizontally centered.
+Flats are expected to be infinitely tiled on the screen.
+
+### InterMusic
+`intermusic = "song"`
+Music to be used for intertext and intertextsecret. If not specified D_VICTOR/D_READ_M will be used, depending on the IWAD.
+
+### Episode
+`episode = "patch", "name", "key"`
+Defines an entry for the episode menu. If all defined episodes define a valid patch, those will be shown, otherwise the names will be used with the HUD font. At most 10 episodes can be defined.
+
+`episode = clear`
+Clears the episode menu of all previous entries. Should be used on the first map if a mod wants to define its own episodes. Doom 2 and Chex Quest have no episodes by default.
+
+### BossAction
+`bossaction = thingtype, linespecial, tag`
+Defines a boss death action, clearing any existing vanilla definitions, for all thingtypes on the map.  
+Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. `linespecial` should be executed as if it were the special of a linedef with all properties of the linedef at index 0.  
+Thingtype uses ZDoom's class names (see list below). Just like in vanilla, the relevant thingtype must call the `A_BossDeath` codepointer within its death sequence in order to activate the boss action.
+
+`bossaction = clear`
+Disables any previously-defined boss actions (including map defaults) for the given map.
+
+### Jumping
+`jumping = disallow`
+Jumping is disallowed. Jump actions should be prevented and be treated as a no-op.
+
+`jumping = allow`
+The default, jumping is not prevented in ports which support jumping.
+
+`jumping = require`
+Enables jumping. If jumping is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support jumping.
+
+### Crouching
+`crouching = disallow`
+Crouching is disallowed. Crouch actions should be prevented and be treated as a no-op.
+
+`crouching = allow`
+The default, crouching is not prevented in ports which support crouching.
+
+`crouching = require`
+Enables crouching. If crouching is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support crouching.
+
+### FreeAim
+`freeaim = disallow`
+Vertical aiming is disallowed.
+
+`freeaim = allow`
+The default, vertical aiming is not prevented in ports which support it.
+
+`freeaim = require`
+Enables vertical aiming as well as freelook. If either is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support freelook or vertical aiming.
+
+## Default handling
+
+Normally, if some information cannot be found, the engine will fall back to its hard coded implementation, with a few exceptions:
+
+- `nextsecret` If not present, it will use the normal exit's map if the current map has a MAPINFO record. This also applies to maps which by default have a secret exit!
+
+- `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
+
+## Port-exclusive keywords
+
+In order to not need to define multiple MAPINFO-type lumps for multiple engines to be supported correctly, UMAPINFO also includes support for port-exclusive keywords, to help deduplicate work for modders.  
+Such a feature can also proof useful for engines that aim to have their own exclusive modding features, and may need to define these new entries somewhere.  
+Such keywords are in the form of "`portname_keyword`", i.e. where each one is prefixed with the target engine's name and the crucial underscore (`_`).  
+Take, for example, the following: `MyFancyDoom_EnableBloom = true`, or `MyBizarreDoom_AnitGravity = true`, etc.  
+Each keyword's respective values, or list thereof, are entirely and exclusively up to the discretion of each implementing engine, all other ports must ignore such keywords not intended for them.  
+
+## Example
+```
+MAP E1M7
+{
+    levelname = "The Hidden Cave"
+    skytexture =  "sky2"
+    intertext = "You have beaten the shit",
+        "out of those big barons",
+        "and now must continue the fight."
+}
+```
+
+## Thingtypes
+```
+    DoomPlayer
+    ZombieMan
+    ShotgunGuy
+    Archvile
+    ArchvileFire
+    Revenant
+    RevenantTracer
+    RevenantTracerSmoke
+    Fatso
+    FatShot
+    ChaingunGuy
+    DoomImp
+    Demon
+    Spectre
+    Cacodemon
+    BaronOfHell
+    BaronBall
+    HellKnight
+    LostSoul
+    SpiderMastermind
+    Arachnotron
+    Cyberdemon
+    PainElemental
+    WolfensteinSS
+    CommanderKeen
+    BossBrain
+    BossEye
+    BossTarget
+    SpawnShot
+    SpawnFire
+    ExplosiveBarrel
+    DoomImpBall
+    CacodemonBall
+    Rocket
+    PlasmaBall
+    BFGBall
+    ArachnotronPlasma
+    BulletPuff
+    Blood
+    TeleportFog
+    ItemFog
+    TeleportDest
+    BFGExtra
+    GreenArmor
+    BlueArmor
+    HealthBonus
+    ArmorBonus
+    BlueCard
+    RedCard
+    YellowCard
+    YellowSkull
+    RedSkull
+    BlueSkull
+    Stimpack
+    Medikit
+    Soulsphere
+    InvulnerabilitySphere
+    Berserk
+    BlurSphere
+    RadSuit
+    Allmap
+    Infrared
+    Megasphere
+    Clip
+    ClipBox
+    RocketAmmo
+    RocketBox
+    Cell
+    CellPack
+    Shell
+    ShellBox
+    Backpack
+    BFG9000
+    Chaingun
+    Chainsaw
+    RocketLauncher
+    PlasmaRifle
+    Shotgun
+    SuperShotgun
+    TechLamp
+    TechLamp2
+    Column
+    TallGreenColumn
+    ShortGreenColumn
+    TallRedColumn
+    ShortRedColumn
+    SkullColumn
+    HeartColumn
+    EvilEye
+    FloatingSkull
+    TorchTree
+    BlueTorch
+    GreenTorch
+    RedTorch
+    ShortBlueTorch
+    ShortGreenTorch
+    ShortRedTorch
+    Stalagtite
+    TechPillar
+    CandleStick
+    Candelabra
+    BloodyTwitch
+    Meat2
+    Meat3
+    Meat4
+    Meat5
+    NonsolidMeat2
+    NonsolidMeat4
+    NonsolidMeat3
+    NonsolidMeat5
+    NonsolidTwitch
+    DeadCacodemon
+    DeadMarine
+    DeadZombieMan
+    DeadDemon
+    DeadLostSoul
+    DeadDoomImp
+    DeadShotgunGuy
+    GibbedMarine
+    GibbedMarineExtra
+    HeadsOnAStick
+    Gibs
+    HeadOnAStick
+    HeadCandles
+    DeadStick
+    LiveStick
+    BigTree
+    BurningBarrel
+    HangNoGuts
+    HangBNoBrain
+    HangTLookingDown
+    HangTSkull
+    HangTLookingUp
+    HangTNoBrain
+    ColonGibs
+    SmallBloodPool
+    BrainStem
+    PointPusher
+    PointPuller
+    MBFHelperDog
+    PlasmaBall1
+    PlasmaBall2
+    EvilSceptre
+    UnholyBible
+    MusicChanger
+    Deh_Actor_145
+    [...]
+    Deh_Actor_249
+```
