@@ -200,6 +200,14 @@ Normally, if some information cannot be found, the engine will fall back to its 
 
 - `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
 
+## Port-exclusive keywords
+
+In order to not need to define multiple MAPINFO-type lumps for multiple engines to be supported correctly, UMAPINFO also includes support for port-exclusive keywords, to help deduplicate work for modders.  
+Such a feature can also proof useful for engines that aim to have their own exclusive modding features, and may need to define these new entries somewhere.  
+Such keywords are in the form of "`portname_keyword`", i.e. where each one is prefixed with the target engine's name and the crucial underscore (`_`).  
+Take, for example, the following: `MyFancyDoom_EnableBloom = true`, or `MyBizarreDoom_AnitGravity = true`, etc.  
+Each keyword's respective values, or list thereof, are entirely and exclusively up to the discretion of each implementing engine, all other ports must ignore such keywords not intended for them.  
+
 ## Example
 ```
 MAP E1M7
