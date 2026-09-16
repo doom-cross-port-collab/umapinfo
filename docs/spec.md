@@ -79,19 +79,27 @@ Specifies the level's par time.
 Overrides a default map exit (e.g. ExM8 or MAP30)
 
 `endgame = true`
-Ends the game after this level, showing the default post-game screen for the current episode. Skips the 'entering level' screen.
+Ends the game after this level, showing the default post-game screen for the current episode.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### EndPic
 `endpic = "graphic"`
-Ends the game after this level, showing the specified graphic as an end screen. Skips the 'entering level' screen.
+Ends the game after this level, showing the specified graphic as an end screen.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### EndBunny
 `endbunny = true`
-Ends the game after this level, showing the bunny scroller. Skips the 'entering level' screen.
+Ends the game after this level, showing the bunny scroller.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### EndCast
 `endcast = true`
-Ends the game after this level, showing the cast call. Skips the 'entering level' screen.
+Ends the game after this level, showing the cast call.
+Skips the 'entering level' screen.
+Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
 
 ### NoIntermission
 `nointermission = true/false`
