@@ -7,6 +7,7 @@ map MAP01
 	Next = "MAP02"
 	Music = "D_RUNNIN"
 	SkyTexture = "SKY1"
+	ParTime = 30
 	Episode = clear
 	Episode = "-", "Hell on Earth", "h"
 }
@@ -20,6 +21,7 @@ map MAP02
 	Next = "MAP03"
 	Music = "D_STALKS"
 	SkyTexture = "SKY1"
+	ParTime = 90
 }
 
 map MAP03
@@ -31,6 +33,7 @@ map MAP03
 	Next = "MAP04"
 	Music = "D_COUNTD"
 	SkyTexture = "SKY1"
+	ParTime = 120
 }
 
 map MAP04
@@ -42,6 +45,7 @@ map MAP04
 	Next = "MAP05"
 	Music = "D_BETWEE"
 	SkyTexture = "SKY1"
+	ParTime = 120
 }
 
 map MAP05
@@ -53,6 +57,7 @@ map MAP05
 	Next = "MAP06"
 	Music = "D_DOOM"
 	SkyTexture = "SKY1"
+	ParTime = 90
 }
 
 map MAP06
@@ -64,6 +69,7 @@ map MAP06
 	Next = "MAP07"
 	Music = "D_THE_DA"
 	SkyTexture = "SKY1"
+	ParTime = 150
 	InterBackdrop = "SLIME16"
 	InterMusic = "D_READ_M"
 	InterText = "You have entered deeply into the infested",
@@ -89,6 +95,7 @@ map MAP07
 	Next = "MAP08"
 	Music = "D_SHAWN"
 	SkyTexture = "SKY1"
+	ParTime = 120
 }
 
 map MAP08
@@ -100,6 +107,7 @@ map MAP08
 	Next = "MAP09"
 	Music = "D_DDTBLU"
 	SkyTexture = "SKY1"
+	ParTime = 120
 }
 
 map MAP09
@@ -111,6 +119,7 @@ map MAP09
 	Next = "MAP10"
 	Music = "D_IN_CIT"
 	SkyTexture = "SKY1"
+	ParTime = 270
 }
 
 map MAP10
@@ -122,6 +131,7 @@ map MAP10
 	Next = "MAP11"
 	Music = "D_DEAD"
 	SkyTexture = "SKY1"
+	ParTime = 90
 }
 
 map MAP11
@@ -133,6 +143,7 @@ map MAP11
 	Next = "MAP12"
 	Music = "D_STLKS2"
 	SkyTexture = "SKY1"
+	ParTime = 210
 	InterBackdrop = "RROCK14"
 	InterMusic = "D_READ_M"
 	InterText = "You have won! Your victory has enabled",
@@ -163,6 +174,7 @@ map MAP12
 	Next = "MAP13"
 	Music = "D_THEDA2"
 	SkyTexture = "SKY2"
+	ParTime = 150
 }
 
 map MAP13
@@ -174,6 +186,7 @@ map MAP13
 	Next = "MAP14"
 	Music = "D_DOOM2"
 	SkyTexture = "SKY2"
+	ParTime = 150
 }
 
 map MAP14
@@ -185,6 +198,7 @@ map MAP14
 	Next = "MAP15"
 	Music = "D_DDTBL2"
 	SkyTexture = "SKY2"
+	ParTime = 150
 }
 
 map MAP15
@@ -197,6 +211,7 @@ map MAP15
 	NextSecret = "MAP31"
 	Music = "D_RUNNI2"
 	SkyTexture = "SKY2"
+	ParTime = 210
 	InterBackdrop = "RROCK13"
 	InterMusic = "D_READ_M"
 	InterTextSecret = "Congratulations, you've found the secret",
@@ -215,6 +230,7 @@ map MAP16
 	Next = "MAP17"
 	Music = "D_DEAD2"
 	SkyTexture = "SKY2"
+	ParTime = 150
 }
 
 map MAP17
@@ -226,6 +242,7 @@ map MAP17
 	Next = "MAP18"
 	Music = "D_STLKS3"
 	SkyTexture = "SKY2"
+	ParTime = 420
 }
 
 map MAP18
@@ -237,6 +254,7 @@ map MAP18
 	Next = "MAP19"
 	Music = "D_ROMERO"
 	SkyTexture = "SKY2"
+	ParTime = 150
 }
 
 map MAP19
@@ -248,6 +266,7 @@ map MAP19
 	Next = "MAP20"
 	Music = "D_SHAWN2"
 	SkyTexture = "SKY2"
+	ParTime = 210
 }
 
 map MAP20
@@ -259,6 +278,7 @@ map MAP20
 	Next = "MAP21"
 	Music = "D_MESSAG"
 	SkyTexture = "SKY2"
+	ParTime = 150
 	InterBackdrop = "RROCK07"
 	InterMusic = "D_READ_M"
 	InterText = "You are at the corrupt heart of the city,",
@@ -281,6 +301,7 @@ map MAP21
 	Next = "MAP22"
 	Music = "D_COUNT2"
 	SkyTexture = "SKY3"
+	ParTime = 240
 }
 
 map MAP22
@@ -292,6 +313,7 @@ map MAP22
 	Next = "MAP23"
 	Music = "D_DDTBL3"
 	SkyTexture = "SKY3"
+	ParTime = 150
 }
 
 map MAP23
@@ -303,6 +325,7 @@ map MAP23
 	Next = "MAP24"
 	Music = "D_AMPIE"
 	SkyTexture = "SKY3"
+	ParTime = 180
 }
 
 map MAP24
@@ -314,6 +337,7 @@ map MAP24
 	Next = "MAP25"
 	Music = "D_THEDA3"
 	SkyTexture = "SKY3"
+	ParTime = 150
 }
 
 map MAP25
@@ -325,6 +349,7 @@ map MAP25
 	Next = "MAP26"
 	Music = "D_ADRIAN"
 	SkyTexture = "SKY3"
+	ParTime = 150
 }
 
 map MAP26
@@ -336,6 +361,7 @@ map MAP26
 	Next = "MAP27"
 	Music = "D_MESSG2"
 	SkyTexture = "SKY3"
+	ParTime = 300
 }
 
 map MAP27
@@ -347,6 +373,7 @@ map MAP27
 	Next = "MAP28"
 	Music = "D_ROMER2"
 	SkyTexture = "SKY3"
+	ParTime = 330
 }
 
 map MAP28
@@ -358,6 +385,7 @@ map MAP28
 	Next = "MAP29"
 	Music = "D_TENSE"
 	SkyTexture = "SKY3"
+	ParTime = 420
 }
 
 map MAP29
@@ -369,6 +397,7 @@ map MAP29
 	Next = "MAP30"
 	Music = "D_SHAWN3"
 	SkyTexture = "SKY3"
+	ParTime = 300
 }
 
 map MAP30
@@ -380,6 +409,7 @@ map MAP30
 	Endcast = true
 	Music = "D_OPENIN"
 	SkyTexture = "SKY3"
+	ParTime = 180
 	InterBackdrop = "RROCK17"
 	InterMusic = "D_READ_M"
 	InterText = "The horrendous visage of the biggest",
@@ -409,6 +439,7 @@ map MAP31
 	NextSecret = "MAP32"
 	Music = "D_EVIL"
 	SkyTexture = "SKY3"
+	ParTime = 120
 	InterBackdrop = "RROCK19"
 	InterMusic = "D_READ_M"
 	InterTextSecret = "Congratulations, you've found the",
@@ -425,4 +456,5 @@ map MAP32
 	Next = "MAP16"
 	Music = "D_ULTIMA"
 	SkyTexture = "SKY3"
+	ParTime = 30
 }

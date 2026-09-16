@@ -7,6 +7,7 @@ map E1M1
 	Next = "E1M2"
 	Music = "D_E1M1"
 	SkyTexture = "SKY1"
+	ParTime = 0
 	Episode = clear
 	Episode = "M_EPI1", "Name", "Key"
 }
@@ -20,6 +21,7 @@ map E1M2
 	Next = "E1M3"
 	Music = "D_E1M2"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M3
@@ -32,6 +34,7 @@ map E1M3
 	NextSecret = "E1M9"
 	Music = "D_E1M3"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M4
@@ -43,6 +46,7 @@ map E1M4
 	Next = "E1M5"
 	Music = "D_E1M4"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M5
@@ -54,6 +58,7 @@ map E1M5
 	Next = "E1M6"
 	Music = "D_E1M5"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M6
@@ -65,6 +70,7 @@ map E1M6
 	Next = "E1M7"
 	Music = "D_E1M6"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M7
@@ -76,6 +82,7 @@ map E1M7
 	Next = "E1M8"
 	Music = "D_E1M7"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E1M8
@@ -86,6 +93,8 @@ map E1M8
 	Author = ""
 	Music = "D_E1M8"
 	SkyTexture = "SKY1"
+	ParTime = 0
+	NoIntermission = true
 	EndPic = "CREDIT"
 	InterBackdrop = "FLOOR4_8"
 	InterMusic = "D_VICTOR"
@@ -101,6 +110,7 @@ map E1M9
 	Next = "E1M4"
 	Music = "D_E1M9"
 	SkyTexture = "SKY1"
+	ParTime = 0
 }
 
 map E2M1
@@ -112,6 +122,7 @@ map E2M1
 	Next = "E2M2"
 	Music = "D_E2M1"
 	SkyTexture = "SKY2"
+	ParTime = 0
 	Episode = "M_EPI2", "Name", "Key"
 }
 
@@ -124,6 +135,7 @@ map E2M2
 	Next = "E2M3"
 	Music = "D_E2M2"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M3
@@ -135,6 +147,7 @@ map E2M3
 	Next = "E2M4"
 	Music = "D_E2M3"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M4
@@ -146,6 +159,7 @@ map E2M4
 	Next = "E2M5"
 	Music = "D_E2M4"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M5
@@ -158,6 +172,7 @@ map E2M5
 	NextSecret = "E2M9"
 	Music = "D_E2M5"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M6
@@ -169,6 +184,7 @@ map E2M6
 	Next = "E2M7"
 	Music = "D_E2M6"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M7
@@ -180,6 +196,7 @@ map E2M7
 	Next = "E2M8"
 	Music = "D_E2M7"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E2M8
@@ -190,6 +207,8 @@ map E2M8
 	Author = ""
 	Music = "D_E2M8"
 	SkyTexture = "SKY2"
+	ParTime = 0
+	NoIntermission = true
 	EndPic = "VICTORY2"
 	InterBackdrop = "SFLR6_1"
 	InterMusic = "D_VICTOR"
@@ -205,6 +224,7 @@ map E2M9
 	Next = "E2M6"
 	Music = "D_E2M9"
 	SkyTexture = "SKY2"
+	ParTime = 0
 }
 
 map E3M1
@@ -216,6 +236,7 @@ map E3M1
 	Next = "E3M2"
 	Music = "D_E3M1"
 	SkyTexture = "SKY3"
+	ParTime = 0
 	Episode = "M_EPI3", "Name", "Key"
 }
 
@@ -228,6 +249,7 @@ map E3M2
 	Next = "E3M3"
 	Music = "D_E3M2"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M3
@@ -239,6 +261,7 @@ map E3M3
 	Next = "E3M4"
 	Music = "D_E3M3"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M4
@@ -250,6 +273,7 @@ map E3M4
 	Next = "E3M5"
 	Music = "D_E3M4"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M5
@@ -261,6 +285,7 @@ map E3M5
 	Next = "E3M6"
 	Music = "D_E3M5"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M6
@@ -273,6 +298,7 @@ map E3M6
 	NextSecret = "E3M9"
 	Music = "D_E3M6"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M7
@@ -284,6 +310,7 @@ map E3M7
 	Next = "E3M8"
 	Music = "D_E3M7"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E3M8
@@ -294,6 +321,8 @@ map E3M8
 	Author = ""
 	Music = "D_E3M8"
 	SkyTexture = "SKY3"
+	ParTime = 0
+	NoIntermission = true
 	EndBunny = true
 	InterBackdrop = "MFLR8_4"
 	InterMusic = "D_VICTOR"
@@ -309,6 +338,7 @@ map E3M9
 	Next = "E3M7"
 	Music = "D_E3M9"
 	SkyTexture = "SKY3"
+	ParTime = 0
 }
 
 map E4M1
@@ -320,6 +350,7 @@ map E4M1
 	Next = "E4M2"
 	Music = "D_E3M4"
 	SkyTexture = "SKY4"
+	ParTime = 0
 	Episode = "M_EPI4", "Name", "Key"
 }
 
@@ -333,6 +364,7 @@ map E4M2
 	NextSecret = "E4M9"
 	Music = "D_E3M2"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M3
@@ -344,6 +376,7 @@ map E4M3
 	Next = "E4M4"
 	Music = "D_E3M3"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M4
@@ -355,6 +388,7 @@ map E4M4
 	Next = "E4M5"
 	Music = "D_E1M5"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M5
@@ -366,6 +400,7 @@ map E4M5
 	Next = "E4M6"
 	Music = "D_E2M7"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M6
@@ -377,6 +412,7 @@ map E4M6
 	Next = "E4M7"
 	Music = "D_E2M4"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M7
@@ -388,6 +424,7 @@ map E4M7
 	Next = "E4M8"
 	Music = "D_E2M6"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
 
 map E4M8
@@ -398,6 +435,8 @@ map E4M8
 	Author = ""
 	Music = "D_E2M5"
 	SkyTexture = "SKY4"
+	ParTime = 0
+	NoIntermission = true
 	EndPic = "ENDPIC"
 	InterBackdrop = "MFLR8_3"
 	InterMusic = "D_VICTOR"
@@ -413,4 +452,5 @@ map E4M9
 	Next = "E4M3"
 	Music = "D_E1M9"
 	SkyTexture = "SKY4"
+	ParTime = 0
 }
