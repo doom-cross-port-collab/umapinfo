@@ -29,7 +29,9 @@ Currently the following keys are supported. If not given, the hardcoded default 
 
 ### Levelname
 `levelname = "name"`
-Specifies the readable name of the level (e.g. "Hangar") This will be used in the automap and also on the status screen if no name patch is specified.
+Specifies the readable name of the level, e.g. "Hangar" or "Entryway".  
+This will be used in the automap, and any port-exclusive other forms of displaying the level's name as-is, e.g. "level name announcement" UI elements.  
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
 
 ### Label
 `label = "name"`
@@ -40,11 +42,17 @@ Only print the levelname on the automap.
 
 ### Author
 `author = "name"`
-Specifies the level author's name.
+Specifies the level author's name.  
+While vanilla Doom did not have any methods of providing credits to map authors in-game, outside of modifying the equivalent `levelpic` entry, this option is provided for mod authors to include level design credits, directly within the target levels.  
+Ports are free to use this to display this information as chosen, with the exception of the intermisison screens.  
+This will be used as a default option for the intermission screens for 'entering' and 'finished' if `levelpic` is not defined, see below.
 
 ### LevelPic
 `levelpic = "graphic"`
-Specifies the patch that is used on the status screen for 'entering' and 'finished'.
+Specifies the graphic that is used on the 'entering level' and 'finished level' screens.  
+This graphic usually contains the name of the level without additional labels such as "MAP01", and also optionally contains the map author.  
+If NOT specified, then `levelname` and `author` (if present) will be printed using font graphics in the place of `levelpic`, allowing authors to change the level name in the score screen without needing to supply custom graphics.  
+If specified, do not draw `levelname` or `author`, just the `levelpic` itself.
 
 ### Next
 `next = "mapname"`
@@ -189,8 +197,6 @@ Normally, if some information cannot be found, the engine will fall back to its 
 - `nextsecret` If not present, it will use the normal exit's map if the current map has a MAPINFO record. This also applies to maps which by default have a secret exit!
 
 - `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
-
-- `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used. If the author field is set, it will also be shown.
 
 ## Example
 ```
