@@ -149,7 +149,9 @@ Clears the episode menu of all previous entries. Should be used on the first map
 
 ### BossAction
 `bossaction = thingtype, linespecial, tag`
-Defines a boss death action, overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. `linespecial` should be executed as if it were the special of a linedef with all properties of the linedef at index 0. Thingtype uses ZDoom's class names (see list below.)
+Defines a boss death action, clearing any existing vanilla definitions, for all thingtypes on the map.  
+Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. `linespecial` should be executed as if it were the special of a linedef with all properties of the linedef at index 0.  
+Thingtype uses ZDoom's class names (see list below). Just like in vanilla, the relevant thingtype must call the `A_BossDeath` codepointer within its death sequence in order to activate the boss action.
 
 `bossaction = clear`
 Disables any previously-defined boss actions (including map defaults) for the given map.
