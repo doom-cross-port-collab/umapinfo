@@ -1,10 +1,18 @@
-# UMAPINFO Rev 2.2
+# UMAPINFO Rev 2.3
 
 UMAPINFO is a cross-port (universal) MAPINFO variant that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
 
 The full specification is available [here](./docs/spec.md).
 
 ### Revision History
+
+- Rev 2.3 (September 16 2026)
+  - Increased maximum number of episodes from 8 to 10.
+  - Added official templates to repository.
+  - Added keyword to specify availability of 'advanced player movement' options (`jumping`, `crouching` & `freeaim`) using three-way logic (`require`, `allow`, `disallow`).
+  - Added support for port-exclusive keywords.
+  - Detailed even more poorly documented parsing and handling behaviors. Including for `interbackdrop`, `bossaction`, `nointermission`, `endgame` and more.
+  - With contributions from Devalaous, @electricbrass, @elf-alchemist, @fabiangreffrath & @Pedro-Beirao.
 
 - Rev 2.2 (@rfomin, December 27 2022)
   - Introduce the new `author` field.
