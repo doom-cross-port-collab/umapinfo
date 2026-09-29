@@ -1,0 +1,223 @@
+--- archive/md/rev_2_3.md
++++ docs/spec.md
+@@ -1,10 +1,10 @@
+-# UMAPINFO Specification Rev 2.3
++# UMAPINFO Specification Rev 3.0
+ Contents:
+ - [Map Entry](#map-entry)
+ - [Keys](#keys)
+ - [Default Handling](#default-handling)
++- [Port-exclusive keywords](#port-exclusive-keywords)
+ - [Example](#example)
+-- [Thingtypes](#thingtypes)
+ 
+ ## Map entry
+ ```
+@@ -97,15 +97,29 @@
+ Skips the 'entering level' screen.
+ Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+ 
+-### EndBunny
++### EndBunny (Doom only)
+ `endbunny = false`
+ Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+ 
+ `endbunny = true`
+-Ends the game after this level, showing the bunny scroller.
++Ends the game after this level, showing the bunny horizontal scroller.
+ Skips the 'entering level' screen.
+ Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
+ 
++### EndDemon (Heretic only)
++`enddemon = false`
++Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
++
++`enddemon = true`
++Ends the game after this level, showing the demon vertical scroller.
++Skips the 'entering level' screen.
++Only applicable to _normal_ exits, and not _secret_ exits — leaving through a secret exit on a map definition with this keyword will _not_ trigger a finale sequence.
++
++### EndPalette
++`endpalette = "palette"`
++Defines the palette to use for the end graphics: 'endpic', 'endbunny' and 'enddemon'.
++Akin to Heretic's palette change during the E2 finale.
++
+ ### EndCast
+ `endcast = false`
+ Overrides a default map finale sequence (e.g. ExM8 or MAP30), or a previously-defined `end*`-keyword.
+@@ -158,9 +172,9 @@
+ 
+ ### BossAction
+ `bossaction = thingtype, linespecial, tag`
+-Defines a boss death action, clearing any existing vanilla definitions, for all thingtypes on the map.  
++Defines a boss death action (triggers on A_BossDeath), clearing any existing vanilla definitions, for all thingtypes on the map.  
+ Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. `linespecial` should be executed as if it were the special of a linedef with all properties of the linedef at index 0.  
+-Thingtype uses ZDoom's class names (see list below). Just like in vanilla, the relevant thingtype must call the `A_BossDeath` codepointer within its death sequence in order to activate the boss action.
++A map may define multiple boss death actions. See the full list for each game: [doom](./doom-thingtypes.md), [heretic](./heretic-thingtypes.md).
+ 
+ `bossaction = clear`
+ Disables any previously-defined boss actions (including map defaults) for the given map.
+@@ -222,161 +236,11 @@
+ MAP E1M7
+ {
+     levelname = "The Hidden Cave"
++    nextsecret = "MAP32"
+     skytexture =  "sky2"
+     intertext = "You have beaten the shit",
+         "out of those big barons",
+         "and now must continue the fight."
++    bossaction = Cyberdemon, 103, 5
+ }
+ ```
+-
+-## Thingtypes
+-```
+-    DoomPlayer
+-    ZombieMan
+-    ShotgunGuy
+-    Archvile
+-    ArchvileFire
+-    Revenant
+-    RevenantTracer
+-    RevenantTracerSmoke
+-    Fatso
+-    FatShot
+-    ChaingunGuy
+-    DoomImp
+-    Demon
+-    Spectre
+-    Cacodemon
+-    BaronOfHell
+-    BaronBall
+-    HellKnight
+-    LostSoul
+-    SpiderMastermind
+-    Arachnotron
+-    Cyberdemon
+-    PainElemental
+-    WolfensteinSS
+-    CommanderKeen
+-    BossBrain
+-    BossEye
+-    BossTarget
+-    SpawnShot
+-    SpawnFire
+-    ExplosiveBarrel
+-    DoomImpBall
+-    CacodemonBall
+-    Rocket
+-    PlasmaBall
+-    BFGBall
+-    ArachnotronPlasma
+-    BulletPuff
+-    Blood
+-    TeleportFog
+-    ItemFog
+-    TeleportDest
+-    BFGExtra
+-    GreenArmor
+-    BlueArmor
+-    HealthBonus
+-    ArmorBonus
+-    BlueCard
+-    RedCard
+-    YellowCard
+-    YellowSkull
+-    RedSkull
+-    BlueSkull
+-    Stimpack
+-    Medikit
+-    Soulsphere
+-    InvulnerabilitySphere
+-    Berserk
+-    BlurSphere
+-    RadSuit
+-    Allmap
+-    Infrared
+-    Megasphere
+-    Clip
+-    ClipBox
+-    RocketAmmo
+-    RocketBox
+-    Cell
+-    CellPack
+-    Shell
+-    ShellBox
+-    Backpack
+-    BFG9000
+-    Chaingun
+-    Chainsaw
+-    RocketLauncher
+-    PlasmaRifle
+-    Shotgun
+-    SuperShotgun
+-    TechLamp
+-    TechLamp2
+-    Column
+-    TallGreenColumn
+-    ShortGreenColumn
+-    TallRedColumn
+-    ShortRedColumn
+-    SkullColumn
+-    HeartColumn
+-    EvilEye
+-    FloatingSkull
+-    TorchTree
+-    BlueTorch
+-    GreenTorch
+-    RedTorch
+-    ShortBlueTorch
+-    ShortGreenTorch
+-    ShortRedTorch
+-    Stalagtite
+-    TechPillar
+-    CandleStick
+-    Candelabra
+-    BloodyTwitch
+-    Meat2
+-    Meat3
+-    Meat4
+-    Meat5
+-    NonsolidMeat2
+-    NonsolidMeat4
+-    NonsolidMeat3
+-    NonsolidMeat5
+-    NonsolidTwitch
+-    DeadCacodemon
+-    DeadMarine
+-    DeadZombieMan
+-    DeadDemon
+-    DeadLostSoul
+-    DeadDoomImp
+-    DeadShotgunGuy
+-    GibbedMarine
+-    GibbedMarineExtra
+-    HeadsOnAStick
+-    Gibs
+-    HeadOnAStick
+-    HeadCandles
+-    DeadStick
+-    LiveStick
+-    BigTree
+-    BurningBarrel
+-    HangNoGuts
+-    HangBNoBrain
+-    HangTLookingDown
+-    HangTSkull
+-    HangTLookingUp
+-    HangTNoBrain
+-    ColonGibs
+-    SmallBloodPool
+-    BrainStem
+-    PointPusher
+-    PointPuller
+-    MBFHelperDog
+-    PlasmaBall1
+-    PlasmaBall2
+-    EvilSceptre
+-    UnholyBible
+-    MusicChanger
+-    Deh_Actor_145
+-    [...]
+-    Deh_Actor_249
+-```

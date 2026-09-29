@@ -1,10 +1,16 @@
-# UMAPINFO Rev 2.3
+# UMAPINFO Rev 3.0
 
 UMAPINFO is a cross-port (universal) MAPINFO variant that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
 
 The full specification is available [here](./docs/spec.md).
 
 ### Revision History
+
+- Rev 3.0 (September 28 2026)
+  - Added Heretic support
+    - New keywords include: `endpalette`, `enddemon`.
+    - Adds all relevant thingtypes for `bossaction`.
+    - With contributions from @Pedro-Beirao and @XaserAcheron
 
 - Rev 2.3 (September 16 2026)
   - Increased maximum number of episodes from 8 to 10.
