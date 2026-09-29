@@ -1,0 +1,17 @@
+* https://github.com/coelckers/prboom-plus/commit/f171535f558a5d714f6ea24c4531394e65fbc30d - added umapinfo.txt.
+* https://github.com/coelckers/prboom-plus/commit/31468db0c9f12a22ae9ae798a625ca6991c9fb10 - updated UMAPINFO spec to curly brace syntax.
+* https://github.com/coelckers/prboom-plus/commit/98309e50de6b170271beffc6bb09ce4b3765fbc8 Updates to the UMAPINFO docs to disambiguate the 'bossaction' field a bit (#178)
+* https://github.com/coelckers/prboom-plus/commit/d840f4258568acbefa1c4608526f2e4469496f8b Fix typo in ZDoom-style Actor name. (#201)
+* https://github.com/coelckers/prboom-plus/commit/d36f06b0755681f06e39e2d780a6ab790347ab65 if interbackdrop does not specify a valid flat, draw it as a patch instead
+* https://github.com/coelckers/prboom-plus/commit/37f05fa7c48e1365df71825a5bf6a9a979baaddb append revision tracker to UMAPINFO spec document
+* https://github.com/coelckers/prboom-plus/commit/38992ee645879b817c24786f12ef5fd28239ea9e reformat umapinfo.txt so that it is easier to read in plaintext (#255)
+* https://github.com/coelckers/prboom-plus/commit/aa7d6b7bb1aaa892d90325cd662492e083a36f07 fix custom episode select for Doom 2 (#254)
+* https://github.com/coelckers/prboom-plus/commit/7df77e26c80b870494bd86cb15616ffb377aab5f Add DEHEXTRA/Crispy Doom actor names to ActorNames[], for BossAction (#280)
+* https://github.com/coelckers/prboom-plus/commit/bf872a00fc4b368c3b4f0cea13321829e40fd1e8 skip the 'entering level' screen if one of endgame, endpic, endbunny or endcast is set (#284)
+* https://github.com/coelckers/prboom-plus/commit/24f1f117eca85726008ed50fa667c59814950acb UMAPINFO: introduce the new 'label' field (#308)
+* https://github.com/coelckers/prboom-plus/commit/d935d883e338b86cb0087a92cc0c8eb747027544 UMAPINFO: fix default intermission (#340)
+* https://github.com/coelckers/prboom-plus/commit/ada280ebb8ca21a3629e7ad1af8846163072849c add markdown version of umapinfo doc (#403)
+* https://github.com/coelckers/prboom-plus/commit/ae345b050b862f1c483ea63e56a1ab93428d3a69 UMAPINFO: Introduce the new author field. (#436)
+
+* https://github.com/kraflab/umapinfo/commit/02b0c3681869c569eca65067c2264829b60e166f Add author field
+* https://github.com/kraflab/umapinfo/commit/f07af4b166eeecfe87bcd3fa9b85ea8d116219eb Update default levelpic behaviour
