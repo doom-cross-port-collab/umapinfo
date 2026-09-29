@@ -3,7 +3,7 @@ Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
 - [Default Handling](#default-handling)
-- [port-exclusive keywords](#port-exclusive-keywords)
+- [Port-exclusive keywords](#port-exclusive-keywords)
 - [Example](#example)
 
 ## Map entry
